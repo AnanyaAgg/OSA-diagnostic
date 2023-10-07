@@ -19,7 +19,7 @@ if img is not None:
 	conf = res[0].probs.top5conf
 	conf = conf.tolist()
 	col = st.columns(2)
-		with col[0]:
+	with col[0]:
 		for i in temp:
 			st.write(res[0].names[i])
 	with col[1]:
