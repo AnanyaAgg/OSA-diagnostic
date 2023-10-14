@@ -33,7 +33,7 @@ if img is not None:
 	with col[1]:
 		for i in conf:
 			st.write(str(i))
-	st.balloons()
+	st.snow()
 
 
 
