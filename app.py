@@ -34,3 +34,6 @@ if img is not None:
 		for i in conf:
 			st.write(str(i))
 
+st.balloons()
+
+
