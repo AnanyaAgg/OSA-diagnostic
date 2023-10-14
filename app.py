@@ -2,10 +2,10 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 st.title('my classification app')
-st.markdown ('''
+st.markdown (f'''
 <style>
 .stApp {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-image: url("https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61802.jpg?w=1800&t=st=1689312423~exp=1689313023~hmac=b81f19f0fa8493e07a3a32fc33ca6365ad7aaf99cdc2bbb02c18eaa5e5c77da0");
 background-size: cover;
 }
 </style>
