@@ -5,7 +5,7 @@ st.title('my classification app')
 st.markdown (f'''
 <style>
 .stApp {{
-background-image: url("https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61802.jpg?w=1800&t=st=1689312423~exp=1689313023~hmac=b81f19f0fa8493e07a3a32fc33ca6365ad7aaf99cdc2bbb02c18eaa5e5c77da0");
+background-image: url("https://images.unsplash.com/photo-1697222691126-c1be7bde3ac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1248&q=80");
 background-size: cover;
 }}
 </style>
