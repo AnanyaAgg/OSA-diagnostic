@@ -46,10 +46,6 @@ if img is not None:
 	tab2.success('congrats!')
 tab3.subheader("About Me!")
 tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area.")
-url = ''
-
-if tab3.button('my email!'):
-    webbrowser.open_new_tab(url)
 
 
 
