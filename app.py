@@ -39,10 +39,10 @@ if img is not None:
 	col = st.columns(2)
 	with col[0]:
 		for i in temp:
-			tab2.write(res[0].names[i])
+			st.write(res[0].names[i])
 	with col[1]:
 		for i in conf:
-			tab2.write(str(i))
+			st.write(str(i))
 	tab2.success('congrats!')
 tab3.subheader("About Me!")
 tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area.")
