@@ -9,7 +9,7 @@ tab1, tab2, tab3 = st.tabs(["Home", "Demo", "About Me"])
 data = np.random.randn(10, 1)
 
 tab1.subheader("What is AIML?")
-tab1.write("AIML stands for "Artificial Intelligence Markup Language," and it is an XML-based programming language primarily used for creating chatbots and virtual assistants. AIML provides a structure for defining conversational patterns and responses, making it a fundamental tool for building natural language processing systems that can engage in human-like conversations.")
+tab1.write("AIML stands for "Artificial Intelligence and Machine Learning." It encompasses the fields of artificial intelligence and machine learning, which involve the development of algorithms and systems that enable machines to perform tasks that typically require human intelligence, such as learning from data, recognizing patterns, and making predictions.")
 
 tab2.subheader("Try the model!")
 tab2.markdown (f'''
