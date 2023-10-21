@@ -3,6 +3,7 @@ from ultralytics import YOLO
 from PIL import Image
 import streamlit as st
 import numpy as np
+import webbrowser
 
 tab1, tab2, tab3 = st.tabs(["Home", "Demo", "About Me"])
 data = np.random.randn(10, 1)
@@ -44,7 +45,11 @@ if img is not None:
 			tab2.write(str(i))
 	tab2.success('congrats!')
 tab3.subheader("About Me!")
-tab3.write("Hi! I am a junior in High School and I live in the Bay Area.")
+tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area.")
+url = ''
+
+if tab3.button('my email!'):
+    webbrowser.open_new_tab(url)
 
 
 
