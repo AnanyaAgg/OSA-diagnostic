@@ -33,10 +33,10 @@ if img is not None:
 	tab2.image(im)
 	mod = my_model()
 	res = mod.predict(im)
-	temp = res[0].probs.top5
-	conf = res[0].probs.top5conf
+	temp = res[0].probs.top1
+	conf = res[0].probs.top1conf
 	conf = conf.tolist()
-	col = tab2.columns(2)
+	col = st.columns(2)
 	with col[0]:
 		for i in temp:
 			tab2.write(res[0].names[i])
