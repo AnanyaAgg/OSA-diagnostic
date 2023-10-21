@@ -46,7 +46,7 @@ if img is not None:
 	tab2.success('congrats!')
 tab3.subheader("About Me!")
 tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area.")
-
+tab3.link_button("📸", "https://www.instagram.com/ananya._.aggarwal/")
 
 
 
