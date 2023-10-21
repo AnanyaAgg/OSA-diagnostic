@@ -48,7 +48,7 @@ tab3.subheader("About Me!")
 tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area.
 Contact me:")
 tab3.link_button("📸", "https://www.instagram.com/ananya._.aggarwal/")
-tab3.link_button("💌", "https://www.ananyaaggarwal101@gmail.com/")
+tab3.link_button("💌", "https://www.instagram.com/ananya._.aggarwal/")
 
 
 
