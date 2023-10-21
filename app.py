@@ -14,7 +14,7 @@ tab2.subheader("Try the model!")
 tab2.markdown (f'''
 <style>
 .stApp {{
-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ftechnology%2520background%2F&psig=AOvVaw1tIVszgGt3NalQMPw6PTOd&ust=1697959356111000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjDiNTNhoIDFQAAAAAdAAAAABAE");
+background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 background-size: cover;
 }}
 </style>
