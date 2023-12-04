@@ -23,10 +23,10 @@ col = st.columns(2)
 
 tab4.subheader("Contact Us & About Me")
 col2 = st.columns(2)
-  with col[0]
+  with col2[0]
     st.write("contact us here!")
     st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
-  with col[1]
+  with col2[1]
     st.write("learn more about me..."
 
 
