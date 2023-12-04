@@ -15,10 +15,20 @@ tab2.subheader("Get your AI-backed diagnosis today!")
 
 tab3.subheader("Find out more about OSA")
 tab3.write("paragraph")
+col = st.columns(2)
+	with col[0]:
+		st.write("info")
+	with col[1]:
+		st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
 
-tab4.subheader("Contact Us")
-tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area. Contact me:")
-tab3.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
+tab4.subheader("Contact Us & About Me")
+col2 = st.columns(2)
+  with col[0]
+    st.write("contact us here!")
+    st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
+  with col[1]
+    st.write("learn more about me..."
+
 
 
 
