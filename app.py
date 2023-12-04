@@ -5,44 +5,18 @@ import streamlit as st
 import numpy as np
 import webbrowser
 
-tab1, tab2, tab3 = st.tabs(["Home", "Demo", "About Me"])
+tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "Contact Us"])
 data = np.random.randn(10, 1)
 
-tab1.subheader("What is AIML?")
-tab1.write("AIML stands for Artificial Intelligence and Machine Learning. It encompasses the fields of artificial intelligence and machine learning, which involve the development of algorithms and systems that enable machines to perform tasks that typically require human intelligence, such as learning from data, recognizing patterns, and making predictions.")
+tab1.subheader("What is Obstructive Sleep Apnea")
+tab1.write("paragraph")
 
-tab2.subheader("Try the model!")
-tab2.markdown (f'''
-<style>
-.stApp {{
-background-image: url("");
-background-size: cover;
-}}
-</style>
-''', unsafe_allow_html=True)
+tab2.subheader("Get your AI-backed diagnosis today!")
 
-@st.cache_resource
-def my_model():
-	model = YOLO('best.pt')
-	return model
-# st.file_uploader sends the image or video from the computer to the server
-img = tab2.file_uploader('upload an image of your pet!')
+tab3.subheader("Find out more about OSA")
+tab3.write("paragraph")
 
-if img is not None:
-	im = Image.open(img)
-	tab2.image(im)
-	mod = my_model()
-	res = mod.predict(im)
-	temp = res[0].probs.top1
-	conf = res[0].probs.top1conf
-	conf = conf.tolist()
-	col = st.columns(2)
-	with col[0]:
-		st.write(res[0].names[temp])
-	with col[1]:
-		st.write(str(conf))
-	tab2.success('congrats!')
-tab3.subheader("About Me!")
+tab4.subheader("Contact Us")
 tab3.write("Hi! I'm Ananya Aggarwal and I'm a junior in high school in the Bay Area. Contact me:")
 tab3.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
 
