@@ -31,8 +31,8 @@ with tab4:
 		st.write("contact us here!")
 		st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
 	with col2[1]:
-		st.write("learn more about me..."
+		st.write("learn more about me...")
 
 
 
-
+			
