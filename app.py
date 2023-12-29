@@ -8,14 +8,17 @@ import webbrowser
 tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "Contact Us"])
 data = np.random.randn(10, 1)
 
-tab1.subheader("What is Obstructive Sleep Apnea")
-tab1.write("paragraph")
+with tab1:
+	st.subheader("What is Obstructive Sleep Apnea")
+	st.write("paragraph")
 
-tab2.subheader("Get your AI-backed diagnosis today!")
+with tab2:
+	st.subheader("Get your AI-backed diagnosis today!")
 
-tab3.subheader("Find out more about OSA")
-tab3.write("paragraph")
-col = st.columns(2)
+with tab3:
+	st.subheader("Find out more about OSA")
+	st.write("paragraph")
+	col = st.columns(2)
 	with col[0]:
 		st.write("info")
 	with col[1]:
