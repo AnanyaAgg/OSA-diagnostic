@@ -5,6 +5,8 @@ import streamlit as st
 import numpy as np
 import webbrowser
 
+st.set_page_config(layout="wide")
+
 tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "Contact Us"])
 data = np.random.randn(10, 1)
 
