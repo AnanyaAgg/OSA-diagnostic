@@ -15,10 +15,10 @@ with tab1:
 	st.write("paragraph")
 
 with tab2:
-	st.subheader("Get your AI-backed diagnosis today!")
-	genre = st.radio(
-    "What is your age?",
-    ["<20", "20-30", "30-40", "40-50", "50-60", ">60"])
+	st.header("Get your AI-backed diagnosis today!")
+	st.subheader("What is your age?")
+	with st.expander():
+		genre = st.radio("select your answer", ["<20", "20-30", "30-40", "40-50", "50-60", ">60"])
 
 with tab3:
 	st.subheader("Find out more about OSA")
