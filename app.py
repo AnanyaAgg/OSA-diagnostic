@@ -24,13 +24,14 @@ with tab3:
 	with col[1]:
 		st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
 
-tab4.subheader("Contact Us & About Me")
-col2 = st.columns(2)
-  with col2[0]
-    st.write("contact us here!")
-    st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
-  with col2[1]
-    st.write("learn more about me..."
+with tab4:
+	st.subheader("Contact Us & About Me")
+	col2 = st.columns(2)
+	with col2[0]
+		st.write("contact us here!")
+    		st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
+ 	 with col2[1]
+    		st.write("learn more about me..."
 
 
 
