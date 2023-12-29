@@ -29,9 +29,14 @@ with tab4:
 	col2 = st.columns(2)
 	with col2[0]:
 		st.write("contact us here!")
+		st.markdown("[![Click me](icon.jpeg)](https://www.instagram.com/ananya._.aggarwal/)")
 		st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
 	with col2[1]:
 		st.write("learn more about me...")
+
+
+
+    
 
 
 
