@@ -18,9 +18,9 @@ with tab2:
 	st.header("Get your AI-backed diagnosis today!")
 	"""general questions"""
 	with st.expander():
-		genre = st.radio("What is your age?"), ["<20", "20-30", "30-40", "40-50", "50-60", ">60"])
+		genre = st.radio("What is your age?", ["<20", "20-30", "30-40", "40-50", "50-60", ">60"])
 	with st.expander():
-		genre = st.radio("What is your gender by birth?"), ["male", "female", "prefer not to say"])
+		genre = st.radio("What is your gender by birth?", ["male", "female", "prefer not to say"])
 	with st.expander():
 		genre = st.radio("How much do you weigh?"), ["<100 lbs", "100-150 lbs", "150-200 lbs", ">200 lbs"])
 	with st.expander():
