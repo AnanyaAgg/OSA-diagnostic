@@ -22,13 +22,13 @@ with tab2:
 	with st.expander():
 		genre = st.radio("What is your gender by birth?", ["male", "female", "prefer not to say"])
 	with st.expander():
-		genre = st.radio("How much do you weigh?"), ["<100 lbs", "100-150 lbs", "150-200 lbs", ">200 lbs"])
+		genre = st.radio("How much do you weigh?", ["<100 lbs", "100-150 lbs", "150-200 lbs", ">200 lbs"])
 	with st.expander():
-		genre = st.radio("How tall are you? (ft, in)"), ["how wld i use double quotes in text?"])
+		genre = st.radio("How tall are you? (ft, in)", ["how wld i use double quotes in text?"])
 
 	"""experience with common symptoms"""
 	with st.expander():
-		genre = st.radio("How often do you snore?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("How often do you snore?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
 		genre = st.radio("Do you snore loudly (louder than talking or loud enough to be heard through closed doors)"), ["yes", "no"])
 	with st.expander():
