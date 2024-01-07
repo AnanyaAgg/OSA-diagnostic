@@ -16,7 +16,7 @@ with tab1:
 
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
-	"""general questions"""
+	'''general questions'''
 	with st.expander():
 		genre = st.radio("What is your age?", ["<20", "20-30", "30-40", "40-50", "50-60", ">60"])
 	with st.expander():
