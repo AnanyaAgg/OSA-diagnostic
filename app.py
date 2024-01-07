@@ -30,37 +30,37 @@ with tab2:
 	with st.expander():
 		genre = st.radio("How often do you snore?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
-		genre = st.radio("Do you snore loudly (louder than talking or loud enough to be heard through closed doors)"), ["yes", "no"])
+		genre = st.radio("Do you snore loudly (louder than talking or loud enough to be heard through closed doors)", ["yes", "no"])
 	with st.expander():
-		genre = st.radio("Has anyone noticed that you quit breathing during your sleep?"), ["yes, multiple times", "yes, only once or twice", "no, never"])
+		genre = st.radio("Has anyone noticed that you quit breathing during your sleep?", ["yes, multiple times", "yes, only once or twice", "no, never"])
 	with st.expander():
-		genre = st.radio("Do you use any medication (pills, gummies, etc.) to fall asleep?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("Do you use any medication (pills, gummies, etc.) to fall asleep?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
-		genre = st.radio("Are you tired after sleeping?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("Are you tired after sleeping?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
-		genre = st.radio("Are you tired during awake time?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("Are you tired during awake time?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
-		genre = st.radio("Have you ever nodded off or fallen asleep while driving? If yes, how often?"), ["yes, aLmost every day", "yes, at least once a week", "yes, very rarely", "no. never"])
+		genre = st.radio("Have you ever nodded off or fallen asleep while driving? If yes, how often?", ["yes, aLmost every day", "yes, at least once a week", "yes, very rarely", "no. never"])
 	with st.expander():
-		genre = st.radio("Do you often have headaches in the morning?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("Do you often have headaches in the morning?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
-		genre = st.radio("Do you have trouble remembering things?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("Do you have trouble remembering things?", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander():
-		genre = st.radio("Do you have trouble with basic problem-solving/logic questions?"), ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("Do you have trouble with basic problem-solving/logic questions?", ["almost every day", "3-4 times a week", "less than that"])
 	
 	"""other health questions"""
 	with st.expander():
-		genre = st.radio("Do you have or are you being trated for high blood pressure"), ["yes, no"])
+		genre = st.radio("Do you have or are you being trated for high blood pressure", ["yes, no"])
 	with st.expander():
-		genre = st.radio("Do you have any known heart problems?"), ["yes, no"])
+		genre = st.radio("Do you have any known heart problems?", ["yes, no"])
 	with st.expander():
-		genre = st.radio("Has anyone in your family died from heart problems?"), ["yes, no"])
+		genre = st.radio("Has anyone in your family died from heart problems?", ["yes, no"])
 	with st.expander():
-		genre = st.radio("Has anyone in your family died from a stroke?"), ["yes, no"])
+		genre = st.radio("Has anyone in your family died from a stroke?", ["yes, no"])
 	with st.expander():
-		genre = st.radio("Have you ever eenn told by a doctor that you are at risk for OSA"), ["yes, no"])
+		genre = st.radio("Have you ever eenn told by a doctor that you are at risk for OSA", ["yes, no"])
 	with st.expander():
-		genre = st.radio("Does/did anyone in your family and/or ancestry have OSA that you are aware of?"), ["yes, no"])
+		genre = st.radio("Does/did anyone in your family and/or ancestry have OSA that you are aware of?", ["yes, no"])
 
 
 
