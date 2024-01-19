@@ -34,33 +34,33 @@ with tab2:
 	with st.expander("Has anyone noticed that you quit breathing during your sleep?"):
 		genre = st.radio("", ["yes, multiple times", "yes, only once or twice", "no, never"])
 	with st.expander("Do you use any medication (pills, gummies, etc.) to fall asleep?"):
-		genre = st.radio(".", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 1)
 	with st.expander("Are you tired after sleeping?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 2)
 	with st.expander("Are you tired during awake time?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 3)
 	with st.expander("Have you ever nodded off or fallen asleep while driving? If yes, how often?"):
-		genre = st.radio("", ["yes, aLmost every day", "yes, at least once a week", "yes, very rarely", "no. never"])
+		genre = st.radio("", ["yes, aLmost every day", "yes, at least once a week", "yes, very rarely", "no. never"], key = 4)
 	with st.expander("Do you often have headaches in the morning?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 5)
 	with st.expander("Do you have trouble remembering things?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 6)
 	with st.expander("Do you have trouble with basic problem-solving/logic questions?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 7)
 	
 	"""other health questions"""
 	with st.expander("Do you have or are you being trated for high blood pressure"):
-		genre = st.radio("", ["yes, no"])
+		genre = st.radio("", ["yes, no"], key = 8)
 	with st.expander("Do you have any known heart problems?"):
-		genre = st.radio("", ["yes, no"])
+		genre = st.radio("", ["yes, no"], key = 9)
 	with st.expander("Has anyone in your family died from heart problems?"):
-		genre = st.radio("", ["yes, no"])
+		genre = st.radio("", ["yes, no"], key = 10)
 	with st.expander("Has anyone in your family died from a stroke?"):
-		genre = st.radio("", ["yes, no"])
+		genre = st.radio("", ["yes, no"], key = 11)
 	with st.expander("Have you ever eenn told by a doctor that you are at risk for OSA"):
-		genre = st.radio("", ["yes, no"])
+		genre = st.radio("", ["yes, no"], key = 12)
 	with st.expander("Does/did anyone in your family and/or ancestry have OSA that you are aware of?"):
-		genre = st.radio("", ["yes, no"])
+		genre = st.radio("", ["yes, no"], key = 13)
 
 
 
