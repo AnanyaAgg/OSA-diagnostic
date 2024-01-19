@@ -50,17 +50,17 @@ with tab2:
 	
 	"""other health questions"""
 	with st.expander("Do you have or are you being trated for high blood pressure"):
-		genre = st.radio("", ["yes, no"], key = 8)
+		genre = st.radio("", ["yes", "no"], key = 8)
 	with st.expander("Do you have any known heart problems?"):
-		genre = st.radio("", ["yes, no"], key = 9)
+		genre = st.radio("", ["yes", "no"], key = 9)
 	with st.expander("Has anyone in your family died from heart problems?"):
-		genre = st.radio("", ["yes, no"], key = 10)
+		genre = st.radio("", ["yes", "no"], key = 10)
 	with st.expander("Has anyone in your family died from a stroke?"):
-		genre = st.radio("", ["yes, no"], key = 11)
+		genre = st.radio("", ["yes", "no"], key = 11)
 	with st.expander("Have you ever eenn told by a doctor that you are at risk for OSA"):
-		genre = st.radio("", ["yes, no"], key = 12)
+		genre = st.radio("", ["yes", "no"], key = 12)
 	with st.expander("Does/did anyone in your family and/or ancestry have OSA that you are aware of?"):
-		genre = st.radio("", ["yes, no"], key = 13)
+		genre = st.radio("", ["yes", "no"], key = 13)
 
 
 
