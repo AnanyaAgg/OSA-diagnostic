@@ -34,7 +34,7 @@ with tab2:
 	with st.expander("Has anyone noticed that you quit breathing during your sleep?"):
 		genre = st.radio("", ["yes, multiple times", "yes, only once or twice", "no, never"])
 	with st.expander("Do you use any medication (pills, gummies, etc.) to fall asleep?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
+		genre = st.radio(".", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander("Are you tired after sleeping?"):
 		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
 	with st.expander("Are you tired during awake time?"):
