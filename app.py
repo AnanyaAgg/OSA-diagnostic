@@ -12,7 +12,7 @@ data = np.random.randn(10, 1)
 
 with tab1:
 	st.subheader("What is Obstructive Sleep Apnea")
-	st.write("paragraph")
+	st.write("Obstructive sleep apnea (OSA) is a common yet potentially serious sleep disorder characterized by repeated interruptions in breathing during sleep. These pauses in breathing occur when the muscles in the throat relax and block the airway, leading to a decrease in oxygen levels in the blood. Symptoms may include loud snoring, gasping for air during sleep, daytime fatigue, and difficulty concentrating. If left untreated, OSA can increase the risk of various health issues such as hypertension, heart disease, and stroke. Understanding and managing OSA is crucial for improving sleep quality and overall well-being.")
 
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
