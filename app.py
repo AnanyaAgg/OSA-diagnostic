@@ -12,8 +12,12 @@ data = np.random.randn(10, 1)
 
 with tab1:
 	st.subheader("What is Obstructive Sleep Apnea")
-	st.write("Obstructive sleep apnea (OSA) is a common yet potentially serious sleep disorder characterized by repeated interruptions in breathing during sleep. These pauses in breathing occur when the muscles in the throat relax and block the airway, leading to a decrease in oxygen levels in the blood. Symptoms may include loud snoring, gasping for air during sleep, daytime fatigue, and difficulty concentrating. If left untreated, OSA can increase the risk of various health issues such as hypertension, heart disease, and stroke. Understanding and managing OSA is crucial for improving sleep quality and overall well-being.")
-
+	st.write("Obstructive sleep apnea (OSA) is a prevalent sleep disorder characterized by repeated interruptions in breathing during sleep. These interruptions occur when the muscles in the throat relax excessively, causing the airway to narrow or close partially or completely. As a result, the flow of air into the lungs is restricted, leading to brief pauses in breathing. These pauses can occur numerous times throughout the night, disrupting the normal sleep cycle and leading to fragmented and poor-quality sleep.")
+	col = st.columns(2)
+	with col[0]:
+		st.write("The most common symptom of obstructive sleep apnea is loud and persistent snoring. Other symptoms include pauses in breathing during sleep, often witnessed by a bed partner, and gasping or choking sensations as breathing resumes. Individuals with OSA may also experience daytime symptoms such as excessive daytime sleepiness, morning headaches, difficulty concentrating, and irritability. Furthermore, OSA can lead to nocturnal symptoms such as frequent awakenings, night sweats, and a dry or sore throat upon waking.")
+	with col[1]:
+		st.write("Untreated obstructive sleep apnea can have serious health consequences. The repeated interruptions in breathing lead to oxygen desaturation, putting strain on the cardiovascular system and increasing the risk of hypertension, heart disease, and stroke. OSA is also associated with metabolic disorders such as insulin resistance and type 2 diabetes. Additionally, untreated OSA can contribute to daytime fatigue, impairing cognitive function and increasing the risk of accidents while driving or operating machinery. Moreover, the chronic sleep disruption associated with OSA can negatively impact mood, leading to depression and anxiety in some individuals.")
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
 	'''general questions'''
