@@ -35,7 +35,7 @@ with tab3:
 	with col[0]:
 		st.write("info")
 	with col[1]:
-		st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
+		st.video('https://youtu.be/IIKlqbLwS7M')
 
 with tab4:
 	st.subheader("Contact Us & About Me")
