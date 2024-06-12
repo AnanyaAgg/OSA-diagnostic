@@ -30,10 +30,9 @@ with tab2:
 
 with tab3:
 	st.subheader("Find out more about OSA")
-	st.write("paragraph")
 	col = st.columns(2)
 	with col[0]:
-		st.write("info")
+		st.write("To find out more about OSA, check out our YouTube channel! We post informative videos about all aspects of OSA and hope to spread awareness about this silent killer. ")
 	with col[1]:
 		st.video('https://youtu.be/IIKlqbLwS7M')
 
