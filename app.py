@@ -24,51 +24,7 @@ with tab1:
 		st.write("Untreated obstructive sleep apnea can have serious health consequences. The repeated interruptions in breathing lead to oxygen desaturation, putting strain on the cardiovascular system and increasing the risk of hypertension, heart disease, and stroke. OSA is also associated with metabolic disorders such as insulin resistance and type 2 diabetes. Additionally, untreated OSA can contribute to daytime fatigue, impairing cognitive function and increasing the risk of accidents while driving or operating machinery. Moreover, the chronic sleep disruption associated with OSA can negatively impact mood, leading to depression and anxiety in some individuals.")
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
-	'''general questions'''
-	with st.expander("What is your age?"):
-		genre = st.radio("", ["<20", "20-30", "30-40", "40-50", "50-60", ">60"])
-	with st.expander("What is your gender by birth?"):
-		genre = st.radio("", ["male", "female", "prefer not to say"])
-	with st.expander("How much do you weigh?"):
-		genre = st.radio("", ["<100 lbs", "100-150 lbs", "150-200 lbs", ">200 lbs"])
-	with st.expander("How tall are you? (ft, in)"):
-		genre = st.radio("", ["how wld i use double quotes in text?"])
-
-	"""experience with common symptoms"""
-	with st.expander("How often do you snore?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"])
-	with st.expander("Do you snore loudly (louder than talking or loud enough to be heard through closed doors)"):
-		genre = st.radio("", ["yes", "no"])
-	with st.expander("Has anyone noticed that you quit breathing during your sleep?"):
-		genre = st.radio("", ["yes, multiple times", "yes, only once or twice", "no, never"])
-	with st.expander("Do you use any medication (pills, gummies, etc.) to fall asleep?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 1)
-	with st.expander("Are you tired after sleeping?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 2)
-	with st.expander("Are you tired during awake time?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 3)
-	with st.expander("Have you ever nodded off or fallen asleep while driving? If yes, how often?"):
-		genre = st.radio("", ["yes, aLmost every day", "yes, at least once a week", "yes, very rarely", "no. never"], key = 4)
-	with st.expander("Do you often have headaches in the morning?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 5)
-	with st.expander("Do you have trouble remembering things?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 6)
-	with st.expander("Do you have trouble with basic problem-solving/logic questions?"):
-		genre = st.radio("", ["almost every day", "3-4 times a week", "less than that"], key = 7)
-	
-	"""other health questions"""
-	with st.expander("Do you have or are you being trated for high blood pressure"):
-		genre = st.radio("", ["yes", "no"], key = 8)
-	with st.expander("Do you have any known heart problems?"):
-		genre = st.radio("", ["yes", "no"], key = 9)
-	with st.expander("Has anyone in your family died from heart problems?"):
-		genre = st.radio("", ["yes", "no"], key = 10)
-	with st.expander("Has anyone in your family died from a stroke?"):
-		genre = st.radio("", ["yes", "no"], key = 11)
-	with st.expander("Have you ever eenn told by a doctor that you are at risk for OSA"):
-		genre = st.radio("", ["yes", "no"], key = 12)
-	with st.expander("Does/did anyone in your family and/or ancestry have OSA that you are aware of?"):
-		genre = st.radio("", ["yes", "no"], key = 13)
+	st.write("Quiz coming soon!")
 
 
 
