@@ -7,7 +7,7 @@ import webbrowser
 
 st.set_page_config(layout="wide")
 
-tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "Contact Us"])
+tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "About me + Contact Us"])
 data = np.random.randn(10, 1)
 
 with tab1:
@@ -34,11 +34,12 @@ with tab3:
 	st.video('https://youtu.be/IIKlqbLwS7M')
 
 with tab4:
-	st.subheader("Contact Us & About Me")
 	col2 = st.columns(2)
 	with col2[0]:
+		st.subheader("About Me")
 		st.write("Hello! I am Ananya Aggarwal, a highschooler in Fremont, CA. I started this project to raise awareness about obstructive sleep apnea, as extrmemly widespread sleep disorder around the world. I was shocked by the number of my own family members and friends who were affected by the disorder and realized the problem is much bigger than expected. After doing research about OSA and its treatments, I realized that a big contributing factor to the lack of patient diagnosis for OSA is the expense and inavailblity of its diagnosis options. The most common diagnosis option for OSA, sleep tests, are expensive and not always easy to access, making it hard for possible OSA pateints to seek early diagnosis and therefore more effective treatment. My intelligent diagnostic quiz briges this gap between suspecting patients and professional diagnosis. The quiz is free to all and available on all web browsers. It provides users a prediction of how at-risk/likely they are to have obstructive sleep apnea, informing them of whether they are should get checked for it soon. My goals with this project are to raise the awareness for OSA in general and to gain popularity for my  quiz to provide a free first step to OSA patient's diagnosis and treatment journey!")
 	with col2[1]:
+		st.subheader("Contact Us")
 		st.write("Contact us here!")
 		st.write("Email: apneaassist@gmail.com")
 		st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
