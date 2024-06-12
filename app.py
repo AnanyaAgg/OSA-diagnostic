@@ -30,19 +30,16 @@ with tab2:
 
 with tab3:
 	st.subheader("Find out more about OSA")
-	col = st.columns(2)
-	with col[0]:
-		st.write("To find out more about OSA, check out our YouTube channel! We post informative videos about all aspects of OSA and hope to spread awareness about this silent killer. ")
-	with col[1]:
-		st.video('https://youtu.be/IIKlqbLwS7M')
+	st.write("To find out more about OSA, check out our YouTube channel! We post informative videos about all aspects of OSA and hope to spread awareness about this silent killer. ")
+	st.video('https://youtu.be/IIKlqbLwS7M')
 
 with tab4:
 	st.subheader("Contact Us & About Me")
 	col2 = st.columns(2)
 	with col2[0]:
 		st.write("contact us here!")
-		st.markdown("[![Click me](icon.jpeg)](https://www.instagram.com/ananya._.aggarwal/)")
-		st.link_button("", "https://www.instagram.com/ananya._.aggarwal/")
+		st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
+		st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
 	with col2[1]:
 		st.write("learn more about me...")
 
