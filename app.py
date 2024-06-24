@@ -33,7 +33,7 @@ with tab2:
 		st.text_input("What is your occupation?")
 		st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
 		st.slider("How much do you weigh? in lbs", 1, 300)
-		with st.expander("How tall are you? in inches", 1, 84)
+		st.slider("How tall are you? in inches", 1, 84)
 		st.text_input("What is your blood pressure?")
 		st.number_input("What is your heart rate?")
 		st.number_input("On average, how many steps do you take in a day?")
