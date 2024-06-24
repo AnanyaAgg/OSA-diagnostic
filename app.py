@@ -26,7 +26,7 @@ with tab1:
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
 	st.write("Quiz coming soon!")
-	st.form("my_form"):
+	with st.form("my_form"):
 		with st.expander("What is your gender by birth?"):
 			genre = st.radio("", ["male", "female", "prefer not to say"])
 		with st.slider("What is your age?", 1, 100)
