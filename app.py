@@ -30,13 +30,13 @@ with tab2:
 		with st.expander("What is your gender by birth?"):
 			genre = st.radio("", ["male", "female", "prefer not to say"])
 		st.slider('What is your age?', 1, 100)
-		with st.text_input("What is your occupation?")
-		with st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
-		with st.slider("How much do you weigh? in lbs", 1, 300)
+		st.text_input("What is your occupation?")
+		st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
+		st.slider("How much do you weigh? in lbs", 1, 300)
 		with st.expander("How tall are you? in inches", 1, 84)
-		with st.text_input("What is your blood pressure?")
-		with st.number_input("What is your heart rate?")
-		with st.number_input("On average, how many steps do you take in a day?")
+		st.text_input("What is your blood pressure?")
+		st.number_input("What is your heart rate?")
+		st.number_input("On average, how many steps do you take in a day?")
 
 		st.form_submit_button('Submit my picks')
 
