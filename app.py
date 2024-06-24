@@ -38,13 +38,13 @@ with tab2:
 		st.number_input("What is your heart rate?")
 		st.number_input("On average, how many steps do you take in a day?")
 
-		'''for the following questions, answer on a scale of 0-5 about the last month, where 0 = never, 1 = 1-3 days, 2 = ~1 day per week, 3 = 2-4 nights per week, 4 = 5-6 nights per week, nd 5 = almost every night'''
+		'''For the following questions, answer on a scale of 0-5 about the last month, where 0 = never, 1 = 1-3 days, 2 = ~1 day per week, 3 = 2-4 nights per week, 4 = 5-6 nights per week, nd 5 = almost every night'''
 		st.slider("Experienced difficulty falling asleep?", 0, 5)
 		st.slider("Woken up at night and easily fell asleep again?", 0, 5)
 		st.slider("Woken up and had difficulty falling asleep again / difficulty staying asleep?", 0, 5)
 		st.slider("Non-restorative sleep? i.e. feeling tired or worn-out after getting a usual amount of sleep", 0, 5)
 		
-		'''for the following questions, answer on a scale of 0-4 about the last month, where 0 = never, 1 = almost never, 2 = sometimes, 3 = fairly often, and 4 = very often'''
+		'''For the following questions, answer on a scale of 0-4 about the last month, where 0 = never, 1 = almost never, 2 = sometimes, 3 = fairly often, and 4 = very often'''
 		st.slider("How often have you been upset because of something that happened unexpectedly?", 0, 4)
 		st.slider("How often have you felt that you were unable to control the important things in your life?", 0, 4)
 		st.slider("How often have you felt nervous and stressed?", 0, 4)
