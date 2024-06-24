@@ -26,8 +26,17 @@ with tab1:
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
 	st.write("Quiz coming soon!")
-
-
+	st.form("my_form"):
+		with st.expander("What is your gender by birth?"):
+			genre = st.radio("", ["male", "female", "prefer not to say"])
+		with st.slider("What is your age?", 1, 100)
+		with st.text_input("What is your occupation?")
+		with st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
+		with st.slider("How much do you weigh? in lbs", 1, 300)
+		with st.expander("How tall are you? in inches", 1, 84)
+		with st.text_input("What is your blood pressure?")
+		with st.number_input("What is your heart rate?")
+		with st.number_input("On average, how many steps do you take in a day?")
 
 with tab3:
 	st.subheader("Find out more about OSA")
