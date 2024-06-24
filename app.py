@@ -29,7 +29,7 @@ with tab2:
 	with st.form("my_form"):
 		with st.expander("What is your gender by birth?"):
 			genre = st.radio("", ["male", "female", "prefer not to say"])
-		with st.slider('What is your age?', 1, 100)
+		st.slider('What is your age?', 1, 100)
 		with st.text_input("What is your occupation?")
 		with st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
 		with st.slider("How much do you weigh? in lbs", 1, 300)
