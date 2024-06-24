@@ -38,6 +38,10 @@ with tab2:
 		with st.number_input("What is your heart rate?")
 		with st.number_input("On average, how many steps do you take in a day?")
 
+		st.form_submit_button('Submit my picks')
+
+
+
 with tab3:
 	st.subheader("Find out more about OSA")
 	st.write("To find out more about OSA, check out our YouTube channel! We post informative videos about all aspects of OSA and hope to spread awareness about this silent killer. ")
