@@ -35,7 +35,7 @@ with tab1:
 	)
 
 	st.markdown(f"Selected Language: {sel_lang}")
-	st.markdown(f"""Language Code: {query_parameters.get("lang")[0]}""")
+	st.markdown({query_parameters.get("lang")[0]})
 
 	st.subheader("What is Obstructive Sleep Apnea")
 	st.write("")
