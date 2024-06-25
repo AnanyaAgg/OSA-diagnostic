@@ -101,7 +101,6 @@ with tab2:
 		hr = st.number_input("What is your heart rate?")
 		steps = st.number_input("On average, how many steps do you take in a day?")
 		physical = st.number_input(("On average, how many minutes do you workout in a day?")
-
 		qs1 = st.slider("Experienced difficulty falling asleep?", 0, 5)
 		qs2 = st.slider("Woken up at night and easily fell asleep again?", 0, 5)
 		qs3 = st.slider("Woken up and had difficulty falling asleep again / difficulty staying asleep?", 0, 5)
