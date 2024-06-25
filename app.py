@@ -102,7 +102,7 @@ with tab2:
 		steps = st.number_input("On average, how many steps do you take in a day?")
 		physical = st.number_input(("On average, how many minutes do you workout in a day?")
 
-		st.write("For the following questions, answer on a scale of 0-5 about the last month, where 0 = never, 1 = 1-3 days, 2 = ~1 day per week, 3 = 2-4 nights per week, 4 = 5-6 nights per week, nd 5 = almost every night")
+		w1 = st.write("For the following questions, answer on a scale of 0-5 about the last month, where 0 = never, 1 = 1-3 days, 2 = ~1 day per week, 3 = 2-4 nights per week, 4 = 5-6 nights per week, nd 5 = almost every night")
 		qs1 = st.slider("Experienced difficulty falling asleep?", 0, 5)
 		qs2 = st.slider("Woken up at night and easily fell asleep again?", 0, 5)
 		qs3 = st.slider("Woken up and had difficulty falling asleep again / difficulty staying asleep?", 0, 5)
