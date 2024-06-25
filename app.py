@@ -123,7 +123,7 @@ with tab2:
 		sub = st.form_submit_button('Submit my picks')
 		if sub:
 			qs = (qs1+qs2+qs3+qs4)//2
-			sl = (sl1+sl2+sl3+sl4+sl5+sl6+sl7+sl8+sl9+sl10)//4
+			sl = (sl1+sl2+sl3+(4-sl4)+(4-sl5)+sl6+(4-sl7)+(4-sl8)+sl9+sl10)//4
 			bmi = (weight/(height**2)) * 703
 			if bmi < 18.5:
 				bm = 0
