@@ -38,7 +38,8 @@ with tab1:
 	)
 
 	st.markdown(f"Selected Language: {sel_lang}")
-	st.write(sel_lang)
+	if sel_lang=="English":
+		st.write("hi")
 
 		
 	st.subheader("What is Obstructive Sleep Apnea")
