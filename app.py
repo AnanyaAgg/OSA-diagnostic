@@ -4,11 +4,17 @@ from PIL import Image
 import streamlit as st
 import numpy as np
 import webbrowser
+import joblib
 
 st.set_page_config(layout="wide")
 
 tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "About me + Contact Us"])
 data = np.random.randn(10, 1)
+
+@st.cache_resource
+def load_model():
+	mod = joblib.load('best_random_forest_model.joblib')
+	return mod
 
 with tab1:
 	engInfo = "What is Obstructive Sleep Apnea? Obstructive sleep apnea (OSA) is a prevalent sleep disorder characterized by repeated interruptions in breathing during sleep. These interruptions occur when the muscles in the throat relax excessively, causing the airway to narrow or close partially or completely. As a result, the flow of air into the lungs is restricted, leading to brief pauses in breathing. These pauses can occur numerous times throughout the night, disrupting the normal sleep cycle and leading to fragmented and poor-quality sleep. The most common symptom of obstructive sleep apnea is loud and persistent snoring. Other symptoms include pauses in breathing during sleep, often witnessed by a bed partner, and gasping or choking sensations as breathing resumes. Individuals with OSA may also experience daytime symptoms such as excessive daytime sleepiness, morning headaches, difficulty concentrating, and irritability. Furthermore, OSA can lead to nocturnal symptoms such as frequent awakenings, night sweats, and a dry or sore throat upon waking. Untreated, obstructive sleep apnea can have serious health consequences. The repeated interruptions in breathing lead to oxygen desaturation, putting strain on the cardiovascular system and increasing the risk of hypertension, heart disease, and stroke. OSA is also associated with metabolic disorders such as insulin resistance and type 2 diabetes. Additionally, untreated OSA can contribute to daytime fatigue, impairing cognitive function and increasing the risk of accidents while driving or operating machinery. Moreover, the chronic sleep disruption associated with OSA can negatively impact mood, leading to depression and anxiety in some individuals."
@@ -79,48 +85,67 @@ with tab1:
 		st.write("---")
 
 
-
-		
-	
-
-
-
 	
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
 	with st.form("my_form"):
 		with st.expander("What is your gender by birth?"):
-			genre = st.radio("", ["male", "female", "prefer not to say"])
-		st.slider('What is your age?', 1, 100)
-		st.text_input("What is your occupation?")
-		st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
-		st.slider("How much do you weigh? in lbs", 1, 300)
-		st.slider("How tall are you? in inches", 1, 84)
-		st.text_input("What is your blood pressure?")
-		st.number_input("What is your heart rate?")
-		st.number_input("On average, how many steps do you take in a day?")
+			genre = st.radio("", ["male", "female"])
+		age = st.slider('What is your age?', 1, 100)
+		oc = st.text_input("What is your occupation?")
+		sle = st.slider("On average, what is your daily sleep duration in hours?", 1.0, 24.0,step=0.01)
+		weight = st.slider("How much do you weigh? in lbs", 1, 300)
+		height = st.slider("How tall are you? in inches", 1, 84)
+		sbp = st.number_input("What is your Systolic blood pressure?")
+		dbp = st.number_input("What is your Diastolic blood pressure?")
+		hr = st.number_input("What is your heart rate?")
+		steps = st.number_input("On average, how many steps do you take in a day?")
+		physical = st.number_input(("On average, how many minutes do you workout in a day?")
 
 		'''For the following questions, answer on a scale of 0-5 about the last month, where 0 = never, 1 = 1-3 days, 2 = ~1 day per week, 3 = 2-4 nights per week, 4 = 5-6 nights per week, nd 5 = almost every night'''
-		st.slider("Experienced difficulty falling asleep?", 0, 5)
-		st.slider("Woken up at night and easily fell asleep again?", 0, 5)
-		st.slider("Woken up and had difficulty falling asleep again / difficulty staying asleep?", 0, 5)
-		st.slider("Non-restorative sleep? i.e. feeling tired or worn-out after getting a usual amount of sleep", 0, 5)
+		qs1 = st.slider("Experienced difficulty falling asleep?", 0, 5)
+		qs2 = st.slider("Woken up at night and easily fell asleep again?", 0, 5)
+		qs3 = st.slider("Woken up and had difficulty falling asleep again / difficulty staying asleep?", 0, 5)
+		qs4 = st.slider("Non-restorative sleep? i.e. feeling tired or worn-out after getting a usual amount of sleep", 0, 5)
 		
 		'''For the following questions, answer on a scale of 0-4 about the last month, where 0 = never, 1 = almost never, 2 = sometimes, 3 = fairly often, and 4 = very often'''
-		st.slider("How often have you been upset because of something that happened unexpectedly?", 0, 4)
-		st.slider("How often have you felt that you were unable to control the important things in your life?", 0, 4)
-		st.slider("How often have you felt nervous and stressed?", 0, 4)
-		st.slider("How often have you felt confident about your ability to handle your personal problems?", 0, 4)
-		st.slider("How often have you felt that things were going your way?", 0, 4)
-		st.slider("How often have you found that you could not cope with all the things that you had to do?", 0, 4)
-		st.slider("How often have you been able to control irritations in your life?", 0, 4)
-		st.slider("How often have you felt that you were on top of things?", 0, 4)
-		st.slider("How often have you been angered because of things that happened that were outside of your control?", 0, 4)
-		st.slider("How often have you felt difficulties were piling up so high that you could not overcome them?", 0, 4)
+		sl1 = st.slider("How often have you been upset because of something that happened unexpectedly?", 0, 4)
+		sl2 = st.slider("How often have you felt that you were unable to control the important things in your life?", 0, 4)
+		sl3 = st.slider("How often have you felt nervous and stressed?", 0, 4)
+		sl4 = st.slider("How often have you felt confident about your ability to handle your personal problems?", 0, 4)
+		sl5 = st.slider("How often have you felt that things were going your way?", 0, 4)
+		sl6 = st.slider("How often have you found that you could not cope with all the things that you had to do?", 0, 4)
+		sl7 = st.slider("How often have you been able to control irritations in your life?", 0, 4)
+		sl8 = st.slider("How often have you felt that you were on top of things?", 0, 4)
+		sl9 = st.slider("How often have you been angered because of things that happened that were outside of your control?", 0, 4)
+		sl10 = st.slider("How often have you felt difficulties were piling up so high that you could not overcome them?", 0, 4)
 			  
-		st.form_submit_button('Submit my picks')
-
-
+		sub = st.form_submit_button('Submit my picks')
+		if sub:
+			qs = (qs1+qs2+qs3+qs4)//2
+			sl = (sl1+sl2+sl3+sl4+sl5+sl6+sl7+sl8+sl9+sl10)//4
+			bmi = (weight/(height**2)) * 703
+			if bmi < 18.5:
+				bm = 0
+			elif bmi >= 18.5 and bmi < 25:
+				bm = 1
+			elif bmi >= 25 and bmi < 30:
+				bm = 2
+			else:
+				bm = 3
+			if genre == 'female':
+				gn = 0
+			else:
+				gn = 1
+			inp = [[gn,age,sle,qs,physical,sl,bm,hr,steps,sbp,dbp]]
+			model = load_model()
+			new = model.predict(inp)
+			if new == 0:
+				st.write("You have a healthy sleep")
+			elif new == 1:
+				st.write("You might have Sleep Apnea, please visit a doctor")
+			elif new == 2:
+				st.write("You might have Insomnia, please visit a doctor")
 
 with tab3:
 	st.subheader("Find out more about OSA")
