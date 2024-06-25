@@ -40,7 +40,7 @@ with tab1:
 	st.markdown(f"Selected Language: {sel_lang}")
 	st.markdown(f"""{query_parameters.get("lang")[0]}""")
 
-	if selected_language is "English" :
+	if "selected_language" is "English" :
 		st.write("yay")
 		
 		st.subheader("What is Obstructive Sleep Apnea")
