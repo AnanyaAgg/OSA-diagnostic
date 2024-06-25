@@ -11,6 +11,34 @@ tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information",
 data = np.random.randn(10, 1)
 
 with tab1:
+	import streamlit as st
+
+languages = {"English": "en", "Spanish": "es", "Hindi": "एन"}
+
+query_parameters = st.experimental_get_query_params()
+if "lang" not in query_parameters:
+    st.experimental_set_query_params(lang="en")
+    st.experimental_rerun()
+
+
+def set_language() -> None:
+    if "selected_language" in st.session_state:
+        st.experimental_set_query_params(
+            lang=languages.get(st.session_state["selected_language"])
+        )
+
+
+sel_lang = st.radio(
+    "Language",
+    options=languages,
+    horizontal=True,
+    on_change=set_language,
+    key="selected_language",
+)
+
+st.markdown(f"Selected Language: {sel_lang}")
+st.markdown(f"""Language Code: {query_parameters.get("lang")[0]}""")
+
 	st.subheader("What is Obstructive Sleep Apnea")
 	st.write("")
 	col = st.columns(2)
