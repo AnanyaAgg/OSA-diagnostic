@@ -38,6 +38,8 @@ with tab1:
 	)
 
 	st.markdown(f"Selected Language: {sel_lang}")
+	st.write(sel_lang)
+
 		
 	st.subheader("What is Obstructive Sleep Apnea")
 	st.write("")
