@@ -38,15 +38,12 @@ with tab1:
 	)
 
 	st.markdown(f"Selected Language: {sel_lang}")
-	st.markdown(f"""{query_parameters.get("lang")[0]}""")
-
-	if "selected_language" is "English" :
-		st.write("yay")
 		
 		st.subheader("What is Obstructive Sleep Apnea")
 		st.write("")
 		col = st.columns(2)
 		with col[0]:
+			st.markdown(f"""{query_parameters.get("lang")[0]}""")
 			st.write("Obstructive sleep apnea (OSA) is a prevalent sleep disorder characterized by repeated interruptions in breathing during sleep. These interruptions occur when the muscles in the throat relax excessively, causing the airway to narrow or close partially or completely. As a result, the flow of air into the lungs is restricted, leading to brief pauses in breathing. These pauses can occur numerous times throughout the night, disrupting the normal sleep cycle and leading to fragmented and poor-quality sleep.")
 			st.write("")
 			st.write("The most common symptom of obstructive sleep apnea is loud and persistent snoring. Other symptoms include pauses in breathing during sleep, often witnessed by a bed partner, and gasping or choking sensations as breathing resumes. Individuals with OSA may also experience daytime symptoms such as excessive daytime sleepiness, morning headaches, difficulty concentrating, and irritability. Furthermore, OSA can lead to nocturnal symptoms such as frequent awakenings, night sweats, and a dry or sore throat upon waking.")
