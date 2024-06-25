@@ -64,6 +64,19 @@ with tab1:
 			st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
 			st.write("La apnea obstructiva del sueño no tratada puede tener graves consecuencias para la salud. Las repetidas interrupciones de la respiración provocan una desaturación de oxígeno, lo que ejerce presión sobre el sistema cardiovascular y aumenta el riesgo de hipertensión, enfermedades cardíacas y accidentes cerebrovasculares. La AOS también se asocia con trastornos metabólicos como la resistencia a la insulina y la diabetes tipo 2. Además, la AOS no tratada puede contribuir a la fatiga diurna, perjudicando la función cognitiva y aumentando el riesgo de accidentes al conducir o utilizar maquinaria. Además, la interrupción crónica del sueño asociada con la AOS puede afectar negativamente el estado de ánimo y provocar depresión y ansiedad en algunas personas.")
 		st.write("---")
+	if sel_lang=="Hindi":
+		st.subheader("ऑब्सट्रक्टिव स्लीप एपनिया क्या है?")
+		st.write("")
+		col = st.columns(2)
+		with col[0]:
+			st.write("ऑब्सट्रक्टिव स्लीप एपनिया का सबसे आम लक्षण जोर से और लगातार खर्राटे लेना है। अन्य लक्षणों में नींद के दौरान सांस लेने में रुकावट शामिल है, जिसे अक्सर बिस्तर पर साथी द्वारा देखा जाता है, और सांस फिर से शुरू होने पर हांफने या दम घुटने की अनुभूति होती है। ओएसए से पीड़ित व्यक्तियों को दिन में अत्यधिक नींद आना, सुबह सिरदर्द, ध्यान केंद्रित करने में कठिनाई और चिड़चिड़ापन जैसे लक्षणों का भी अनुभव हो सकता है। इसके अलावा, ओएसए रात में लक्षण पैदा कर सकता है जैसे बार-बार जागना, रात में पसीना आना और जागने पर गला सूखना या दर्द होना।")
+			st.write("")
+			st.write("ऑब्सट्रक्टिव स्लीप एपनिया का सबसे आम लक्षण जोर से और लगातार खर्राटे लेना है। अन्य लक्षणों में नींद के दौरान सांस लेने में रुकावट शामिल है, जिसे अक्सर बिस्तर पर साथी द्वारा देखा जाता है, और सांस फिर से शुरू होने पर हांफने या दम घुटने की अनुभूति होती है। ओएसए से पीड़ित व्यक्तियों को दिन में अत्यधिक नींद आना, सुबह सिरदर्द, ध्यान केंद्रित करने में कठिनाई और चिड़चिड़ापन जैसे लक्षणों का भी अनुभव हो सकता है। इसके अलावा, ओएसए रात में लक्षण पैदा कर सकता है जैसे बार-बार जागना, रात में पसीना आना और जागने पर गला सूखना या दर्द होना।")
+			st.image('apneapic.png')
+		with col[1]:
+			st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
+			st.write("अनुपचारित, ऑब्सट्रक्टिव स्लीप एपनिया के गंभीर स्वास्थ्य परिणाम हो सकते हैं। सांस लेने में बार-बार रुकावट से ऑक्सीजन की कमी हो जाती है, जिससे हृदय प्रणाली पर दबाव पड़ता है और उच्च रक्तचाप, हृदय रोग और स्ट्रोक का खतरा बढ़ जाता है। ओएसए इंसुलिन प्रतिरोध और टाइप 2 मधुमेह जैसे चयापचय संबंधी विकारों से भी जुड़ा है। इसके अतिरिक्त, अनुपचारित ओएसए दिन के समय थकान, संज्ञानात्मक कार्य को ख़राब कर सकता है और ड्राइविंग या मशीनरी चलाते समय दुर्घटनाओं के जोखिम को बढ़ा सकता है। इसके अलावा, ओएसए से जुड़ी पुरानी नींद की गड़बड़ी मूड पर नकारात्मक प्रभाव डाल सकती है, जिससे कुछ व्यक्तियों में अवसाद और चिंता हो सकती है।")
+		st.write("---")
 
 
 
