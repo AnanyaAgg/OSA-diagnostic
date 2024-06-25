@@ -11,8 +11,8 @@ tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information",
 data = np.random.randn(10, 1)
 
 with tab1:
-	languages = {"English": engInfo , "Spanish": "es", "Hindi": "एन"}
 	engInfo = "What is Obstructive Sleep Apnea? Obstructive sleep apnea (OSA) is a prevalent sleep disorder characterized by repeated interruptions in breathing during sleep. These interruptions occur when the muscles in the throat relax excessively, causing the airway to narrow or close partially or completely. As a result, the flow of air into the lungs is restricted, leading to brief pauses in breathing. These pauses can occur numerous times throughout the night, disrupting the normal sleep cycle and leading to fragmented and poor-quality sleep. The most common symptom of obstructive sleep apnea is loud and persistent snoring. Other symptoms include pauses in breathing during sleep, often witnessed by a bed partner, and gasping or choking sensations as breathing resumes. Individuals with OSA may also experience daytime symptoms such as excessive daytime sleepiness, morning headaches, difficulty concentrating, and irritability. Furthermore, OSA can lead to nocturnal symptoms such as frequent awakenings, night sweats, and a dry or sore throat upon waking."
+	languages = {"English": engInfo, "Spanish": "es", "Hindi": "एन"}
 
 	query_parameters = st.experimental_get_query_params()
 	if "lang" not in query_parameters:
