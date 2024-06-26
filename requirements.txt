@@ -2,5 +2,5 @@ ultralytics
 streamlit
 panda
 numpy
-joblib
-scikit-learn
+joblib==1.4.0
+scikit-learn==1.2.2
