@@ -143,9 +143,9 @@ with tab2:
 			if new == 0:
 				st.write("You have a healthy sleep")
 			elif new == 1:
-				st.write("You might have Sleep Apnea, please visit a doctor")
-			elif new == 2:
 				st.write("You might have Insomnia, please visit a doctor")
+			elif new == 2:
+				st.write("You might have Sleep Apnea, please visit a doctor")
 
 with tab3:
 	st.subheader("Find out more about OSA")
