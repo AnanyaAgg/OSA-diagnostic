@@ -155,7 +155,14 @@ with tab3:
 		st.video('https://youtu.be/IIKlqbLwS7M')
 		st.video('https://youtu.be/KGEKz4r5n8Q?si=thuPAv_9QfiZTaEP')
 	with col3[1]:
-		st.link('https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tipranks.com%2Fnews%2Fpress-releases%2Fpap-therapy-reduces-hospitalizations-by-31-and-er-visits-by-23-for-people-with-obstructive-sleep-apnea-and-comorbid-insomnia&h=AT0AjeDIWDRATF0oCMWJJjjwJXF3j9ugmbMgnn_ucAlUU9lEytUJK_0SDSWU-wbdRYNoDRrJwHCEZ1rCh6z05qGMy6lh70ou07eNzlsFz9jN8UDR7nhKLdMeAj0vi4kkwDUi97_EGg&s=1')
+		def embed_facebook_post(post_url):
+		    embed_code = f'<iframe src="<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02Ygx3GoSYpXKCBMc9CPH4qqA6riPUCQm5dQWgmtX3Dm4cauEVJyg36KW6N1c4gk7Ll%26id%3D61560444242747&show_text=true&width=500" width="500" height="622" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+		    st.markdown(embed_code, unsafe_allow_html=True)
+		
+		# Example usage
+		facebook_post_url = "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tipranks.com%2Fnews%2Fpress-releases%2Fpap-therapy-reduces-hospitalizations-by-31-and-er-visits-by-23-for-people-with-obstructive-sleep-apnea-and-comorbid-insomnia&h=AT0AjeDIWDRATF0oCMWJJjjwJXF3j9ugmbMgnn_ucAlUU9lEytUJK_0SDSWU-wbdRYNoDRrJwHCEZ1rCh6z05qGMy6lh70ou07eNzlsFz9jN8UDR7nhKLdMeAj0vi4kkwDUi97_EGg&s=1"
+		embed_facebook_post(facebook_post_url)
+
 with tab4:
 	col4 = st.columns(2)
 	with col4[0]:
