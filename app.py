@@ -166,26 +166,9 @@ with tab3:
 		# Function to generate embed code
 		def get_embed_code(url):
 		    return f"""
-		    <style>
-		    .fb-embed-container {{
-		        position: relative;
-		        width: 100%;
-		        padding-top: 56.25%;
-		    }}
-		    .fb-embed-container iframe {{
-		        position: absolute;
-		        top: 0;
-		        left: 0;
-		        width: 100%;
-		        height: 100%;
-		        border: none;
-		        overflow: hidden;
-		    }}
-		    </style>
-		    <div class="fb-embed-container">
-		        <iframe src="https://www.facebook.com/plugins/post.php?href={url}&width=500" 
-		                allowTransparency="true" allow="encrypted-media"></iframe>
-		    </div>
+		    <iframe src="https://www.facebook.com/plugins/post.php?href={url}&width=500" 
+		            width="100%" height="600" style="border:none;overflow:hidden" 
+		            scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 		    """
 		
 		# Embed each Facebook post
