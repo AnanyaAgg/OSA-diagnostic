@@ -155,13 +155,41 @@ with tab3:
 		st.video('https://youtu.be/IIKlqbLwS7M')
 		st.video('https://youtu.be/KGEKz4r5n8Q?si=thuPAv_9QfiZTaEP')
 	with col3[1]:
-		def embed_facebook_post(post_url):
-			embed_code = f'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02Ygx3GoSYpXKCBMc9CPH4qqA6riPUCQm5dQWgmtX3Dm4cauEVJyg36KW6N1c4gk7Ll%26id%3D61560444242747&show_text=true&width=500" width="500" height="500" style="border:none;overflow:hidden; background-color: #333; color: #fff;" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
-			st.markdown(embed_code, unsafe_allow_html=True)
+		post_urls = [
+		    "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.news-medical.net%2Fnews%2F20240626%2FAI-powered-wristband-or-fingertip-clip-may-revolutionize-sleep-apnea-diagnosis.aspx&h=AT3R-yXoISUG3R8CDSK2uURvbzKOW3ME_pN3CUnBVopAOIYVqTEidemvL1iK3demgxiorWjtu5G3EufLb2iVXoDDUa5qCxh2JwmLuz0e8Mj72J_CxG0O8fQX0rbuNuDAvlqQZcfVaA&s=1",
+		    "https://l.facebook.com/l.php?u=https%3A%2F%2Fhealth.ucsd.edu%2Fnews%2Fpress-releases%2F2024-06-21-study-identifies-first-drug-therapy-for-sleep-apnea%2F&h=AT2gM3rNg-Kpbb3vhV5xDmGEuoxdqVnI8XdfdrWWH0dp_V1FvhOjeqD6Mlz0fsKMvy4g0nlsmYldnTEmfWjwK0gFJ41vHpDxBupbRKistOHW8FhlAbZrJEI0aL4KhkjVxbWuMd0LLQ&s=1",
+		    "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tipranks.com%2Fnews%2Fpress-releases%2Fpap-therapy-reduces-hospitalizations-by-31-and-er-visits-by-23-for-people-with-obstructive-sleep-apnea-and-comorbid-insomnia&h=AT34rj48qhzbtsEIMSdvwM30QgLPI_AGxMnVR7UPZCszSzyKZtvpefrKSQlMv6bS952yzJ8aTsvhP3M9FWUPn1syLwyU3qNKIH3ug7MhXfNufiI80WWt_4-P5E-cqhBghzi3tXyOTA&s=1"
+		    # Add more URLs as needed
+		]
 		
-		# Example usage
-		facebook_post_url = "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tipranks.com%2Fnews%2Fpress-releases%2Fpap-therapy-reduces-hospitalizations-by-31-and-er-visits-by-23-for-people-with-obstructive-sleep-apnea-and-comorbid-insomnia&h=AT0AjeDIWDRATF0oCMWJJjjwJXF3j9ugmbMgnn_ucAlUU9lEytUJK_0SDSWU-wbdRYNoDRrJwHCEZ1rCh6z05qGMy6lh70ou07eNzlsFz9jN8UDR7nhKLdMeAj0vi4kkwDUi97_EGg&s=1"
-		embed_facebook_post(facebook_post_url)
+		# Function to generate embed code
+		def get_embed_code(url):
+		    return f"""
+		    <style>
+		    .fb-embed-container {{
+		        position: relative;
+		        width: 100%;
+		        padding-top: 56.25%;
+		    }}
+		    .fb-embed-container iframe {{
+		        position: absolute;
+		        top: 0;
+		        left: 0;
+		        width: 100%;
+		        height: 100%;
+		        border: none;
+		        overflow: hidden;
+		    }}
+		    </style>
+		    <div class="fb-embed-container">
+		        <iframe src="https://www.facebook.com/plugins/post.php?href={url}&width=500" 
+		                allowTransparency="true" allow="encrypted-media"></iframe>
+		    </div>
+		    """
+		
+		# Embed each Facebook post
+		for url in post_urls:
+		    components.html(get_embed_code(url), height=600)
 
 with tab4:
 	col4 = st.columns(2)
