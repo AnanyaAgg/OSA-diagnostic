@@ -5,6 +5,7 @@ import streamlit as st
 import numpy as np
 import webbrowser
 import joblib
+import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
 
