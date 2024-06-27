@@ -163,17 +163,21 @@ with tab3:
 		    # Add more URLs as needed
 		]
 		
-		# Function to generate embed code
-		def get_embed_code(url):
-		    return f"""
-		    <iframe src="https://www.facebook.com/plugins/post.php?href={url}&width=500" 
-		            width="100%" height="600" style="border:none;overflow:hidden" 
-		            scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-		    """
+		# HTML for Facebook SDK initialization
+		facebook_sdk = """
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" 
+		    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="Xptw7YHi"></script>
+		"""
 		
-		# Embed each Facebook post
 		for url in post_urls:
-		    components.html(get_embed_code(url), height=600)
+		post_html = """
+		    <div class="fb-post" data-href="{url}" data-width="500"></div>
+		    """
+		st.markdown(post_html, unsafe_allow_html=True)
+		
+		# Initialize Facebook SDK
+		st.markdown(facebook_sdk, unsafe_allow_html=True)
 
 with tab4:
 	col4 = st.columns(2)
