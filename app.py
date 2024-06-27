@@ -172,8 +172,8 @@ with tab3:
 		
 		for url in post_urls:
 		post_html = """
-		    <div class="fb-post" data-href="{url}" data-width="500"></div>
-		    """
+		<div class="fb-post" data-href="{url}" data-width="500"></div>
+		"""
 		st.markdown(post_html, unsafe_allow_html=True)
 		
 		# Initialize Facebook SDK
