@@ -163,22 +163,13 @@ with tab3:
 		    # Add more URLs as needed
 		]
 		
-		# HTML for Facebook SDK initialization
-		facebook_sdk = """
-		<div id="fb-root"></div>
-		<script async defer crossorigin="anonymous" 
-		    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="Xptw7YHi"></script>
-		"""
+		def embed_facebook_post(post_url):
+		    embed_code = f'<iframe src="{post_url}" width="500" height="500" style="border:none;overflow:hidden;" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+		    st.markdown(embed_code, unsafe_allow_html=True)
 		
+		# Embed each Facebook post
 		for url in post_urls:
-			post_html = """
-			<div class="fb-post" data-href="{url}" data-width="500"></div>
-			"""
-			st.markdown(post_html, unsafe_allow_html=True)
-		
-		# Initialize Facebook SDK
-		st.markdown(facebook_sdk, unsafe_allow_html=True)
-
+		    embed_facebook_post(url)
 with tab4:
 	col4 = st.columns(2)
 	with col4[0]:
