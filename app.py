@@ -156,7 +156,7 @@ with tab3:
 		st.video('https://youtu.be/KGEKz4r5n8Q?si=thuPAv_9QfiZTaEP')
 	with col3[1]:
 		def embed_facebook_post(post_url):
-			embed_code = f'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02Ygx3GoSYpXKCBMc9CPH4qqA6riPUCQm5dQWgmtX3Dm4cauEVJyg36KW6N1c4gk7Ll%26id%3D61560444242747&show_text=true&width=500" width="500" height="751" style="border:none;overflow:hidden; background-color: #333; color: #fff;" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+			embed_code = f'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02Ygx3GoSYpXKCBMc9CPH4qqA6riPUCQm5dQWgmtX3Dm4cauEVJyg36KW6N1c4gk7Ll%26id%3D61560444242747&show_text=true&width=500" width="500" height="500" style="border:none;overflow:hidden; background-color: #333; color: #fff;" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
 			st.markdown(embed_code, unsafe_allow_html=True)
 		
 		# Example usage
