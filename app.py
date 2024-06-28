@@ -174,29 +174,27 @@ with tab4:
 	engInfo4 = ""
 	spanInfo4 = ""
 	hindiInfo4 = ""
-	languages4 = {"English": engInfo4, "Spanish": spanInfo4, "Hindi": hindiInfo4}
-
+    	languages4 = {"English": engInfo4, "Spanish": spanInfo4, "Hindi": hindiInfo4}
+	
 	query_parameters4 = st.experimental_get_query_params()
 	if "lang" not in query_parameters4:
-  	  st.experimental_set_query_params(lang="en")
-  	  st.experimental_rerun()
-
-
-	def set_language() -> None:
-	    if "selected_language" in st.session_state:
-	        st.experimental_set_query_params(
-   	         lang4=languages4.get(st.session_state["selected_language"])
-   	     )
-
-
+		st.experimental_set_query_params(lang="en")
+	        st.experimental_rerun()
+	
+	def set_language4() -> None:
+		if "selected_language4" in st.session_state:
+	            st.experimental_set_query_params(
+	                lang4=languages4.get(st.session_state["selected_language4"])
+	            )
+	
 	sel_lang4 = st.radio(
-	    "Language",
- 	   options=languages4,
-	    horizontal=True,
-	    on_change=set_language,
-	    key="selected_language",
-	)
-
+		"Language",
+	        options=languages4,
+	        horizontal=True,
+	        on_change=set_language4,
+	        key="selected_language4",
+	    )
+	
 	st.markdown(f"Selected Language: {sel_lang4}")
 	col4 = st.columns(2)
 	if sel_lang4=="English":
