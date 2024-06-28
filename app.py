@@ -18,9 +18,9 @@ def load_model():
 	return mod
 
 with tab1:
-	engInfo = "What is Obstructive Sleep Apnea? Obstructive sleep apnea (OSA) is a prevalent sleep disorder characterized by repeated interruptions in breathing during sleep. These interruptions occur when the muscles in the throat relax excessively, causing the airway to narrow or close partially or completely. As a result, the flow of air into the lungs is restricted, leading to brief pauses in breathing. These pauses can occur numerous times throughout the night, disrupting the normal sleep cycle and leading to fragmented and poor-quality sleep. The most common symptom of obstructive sleep apnea is loud and persistent snoring. Other symptoms include pauses in breathing during sleep, often witnessed by a bed partner, and gasping or choking sensations as breathing resumes. Individuals with OSA may also experience daytime symptoms such as excessive daytime sleepiness, morning headaches, difficulty concentrating, and irritability. Furthermore, OSA can lead to nocturnal symptoms such as frequent awakenings, night sweats, and a dry or sore throat upon waking. Untreated, obstructive sleep apnea can have serious health consequences. The repeated interruptions in breathing lead to oxygen desaturation, putting strain on the cardiovascular system and increasing the risk of hypertension, heart disease, and stroke. OSA is also associated with metabolic disorders such as insulin resistance and type 2 diabetes. Additionally, untreated OSA can contribute to daytime fatigue, impairing cognitive function and increasing the risk of accidents while driving or operating machinery. Moreover, the chronic sleep disruption associated with OSA can negatively impact mood, leading to depression and anxiety in some individuals."
-	hindiInfo = "ऑब्सट्रक्टिव स्लीप एपनिया क्या है? ऑब्सट्रक्टिव स्लीप एपनिया (ओएसए) एक प्रचलित नींद विकार है, जिसमें नींद के दौरान सांस लेने में बार-बार रुकावट आती है। ये रुकावट तब होती है जब गले की मांसपेशियां अत्यधिक शिथिल हो जाती हैं, जिससे वायुमार्ग संकीर्ण या आंशिक या पूरी तरह से बंद हो जाता है। नतीजतन, फेफड़ों में हवा का प्रवाह प्रतिबंधित हो जाता है, जिससे सांस लेने में थोड़ी रुकावट आती है। ये रुकावट रात भर में कई बार हो सकती है, जिससे सामान्य नींद चक्र बाधित होता है और खंडित और खराब गुणवत्ता वाली नींद आती है ऑब्सट्रक्टिव स्लीप एपनिया में तेज और लगातार खर्राटे आते हैं। अन्य लक्षणों में नींद के दौरान सांस लेने में रुकावट शामिल है, जिसे अक्सर बिस्तर पर साथी द्वारा देखा जाता है, और सांस फिर से शुरू होने पर हांफने या दम घुटने की अनुभूति होती है। ओएसए वाले व्यक्तियों को दिन के समय अत्यधिक नींद आना जैसे लक्षणों का भी अनुभव हो सकता है इसके अलावा, सिरदर्द, ध्यान केंद्रित करने में कठिनाई और चिड़चिड़ापन, ओएसए के कारण रात में बार-बार जागना, रात में पसीना आना और जागने पर गले में सूखापन या खराश जैसे लक्षण हो सकते हैं। अनुपचारित, ऑब्सट्रक्टिव स्लीप एपनिया के गंभीर स्वास्थ्य परिणाम हो सकते हैं। सांस लेने में बार-बार रुकावट से ऑक्सीजन की कमी हो जाती है, जिससे हृदय प्रणाली पर दबाव पड़ता है और उच्च रक्तचाप, हृदय रोग और स्ट्रोक का खतरा बढ़ जाता है। ओएसए इंसुलिन प्रतिरोध और टाइप 2 मधुमेह जैसे चयापचय संबंधी विकारों से भी जुड़ा है। इसके अतिरिक्त, अनुपचारित ओएसए दिन के समय थकान, संज्ञानात्मक कार्य को ख़राब कर सकता है और ड्राइविंग या मशीनरी चलाते समय दुर्घटनाओं के जोखिम को बढ़ा सकता है। इसके अलावा, ओएसए से जुड़ी पुरानी नींद की गड़बड़ी मूड पर नकारात्मक प्रभाव डाल सकती है, जिससे कुछ व्यक्तियों में अवसाद और चिंता हो सकती है।"
-	spanInfo = "¿Qué es la apnea obstructiva del sueño? La apnea obstructiva del sueño (AOS) es un trastorno del sueño frecuente que se caracteriza por interrupciones repetidas de la respiración durante el sueño. Estas interrupciones ocurren cuando los músculos de la garganta se relajan excesivamente, lo que hace que las vías respiratorias se estrechen o se cierren parcial o completamente. Como resultado, el flujo de aire hacia los pulmones se restringe, lo que provoca breves pausas en la respiración. Estas pausas pueden ocurrir numerosas veces durante la noche, lo que altera el ciclo normal del sueño y provoca un sueño fragmentado y de mala calidad. La apnea obstructiva del sueño son ronquidos fuertes y persistentes. Otros síntomas incluyen pausas en la respiración durante el sueño, a menudo presenciadas por un compañero de cama, y ​​sensación de jadeo o asfixia cuando se reanuda la respiración. Las personas con AOS también pueden experimentar síntomas diurnos como somnolencia diurna excesiva, por la mañana. Dolores de cabeza, dificultad para concentrarse e irritabilidad. Además, la AOS puede provocar síntomas nocturnos como despertares frecuentes, sudores nocturnos y garganta seca o dolor al despertar. La apnea obstructiva del sueño no tratada puede tener graves consecuencias para la salud. Las repetidas interrupciones de la respiración provocan una desaturación de oxígeno, lo que ejerce presión sobre el sistema cardiovascular y aumenta el riesgo de hipertensión, enfermedades cardíacas y accidentes cerebrovasculares. La AOS también se asocia con trastornos metabólicos como la resistencia a la insulina y la diabetes tipo 2. Además, la AOS no tratada puede contribuir a la fatiga diurna, perjudicando la función cognitiva y aumentando el riesgo de accidentes al conducir o utilizar maquinaria. Además, la interrupción crónica del sueño asociada con la AOS puede afectar negativamente al estado de ánimo, provocando depresión y ansiedad en algunos individuos."
+	engInfo = ""
+	spanInfo = ""
+	hindiInfo = ""
 	languages = {"English": engInfo, "Spanish": spanInfo, "Hindi": hindiInfo}
 
 	query_parameters = st.experimental_get_query_params()
@@ -170,18 +170,68 @@ with tab3:
 		for url in post_urls:
     			embed_facebook_post(url)
 
-with tab4:
+with tab4:	
+	engInfo = ""
+	spanInfo = ""
+	hindiInfo = ""
+	languages = {"English": engInfo, "Spanish": spanInfo, "Hindi": hindiInfo}
+
+	query_parameters = st.experimental_get_query_params()
+	if "lang" not in query_parameters:
+  	  st.experimental_set_query_params(lang="en")
+  	  st.experimental_rerun()
+
+
+	def set_language() -> None:
+	    if "selected_language" in st.session_state:
+	        st.experimental_set_query_params(
+   	         lang=languages.get(st.session_state["selected_language"])
+   	     )
+
+
+	sel_lang = st.radio(
+	    "Language",
+ 	   options=languages,
+	    horizontal=True,
+	    on_change=set_language,
+	    key="selected_language",
+	)
+
+	st.markdown(f"Selected Language: {sel_lang}")
 	col4 = st.columns(2)
-	with col4[0]:
-		st.subheader("About Me")
-		st.write("Hello! I am Ananya Aggarwal, a highschooler in Fremont, CA. I started this project to raise awareness about obstructive sleep apnea, as extrmemly widespread sleep disorder around the world. I was shocked by the number of my own family members and friends who were affected by the disorder and realized the problem is much bigger than expected. After doing research about OSA and its treatments, I realized that a big contributing factor to the lack of patient diagnosis for OSA is the expense and inavailblity of its diagnosis options. The most common diagnosis option for OSA, sleep tests, are expensive and not always easy to access, making it hard for possible OSA pateints to seek early diagnosis and therefore more effective treatment. My intelligent diagnostic quiz briges this gap between suspecting patients and professional diagnosis. The quiz is free to all and available on all web browsers. It provides users a prediction of how at-risk/likely they are to have obstructive sleep apnea, informing them of whether they are should get checked for it soon. My goals with this project are to raise the awareness for OSA in general and to gain popularity for my  quiz to provide a free first step to OSA patient's diagnosis and treatment journey!")
-	with col4[1]:
-		st.subheader("Contact Us")
-		st.write("Contact us here!")
-		st.write("Email: apneaassist@gmail.com")
-		st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
-		st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
+	if sel_lang=="English":
+		with col4[0]:
+			st.subheader("About Me")
+			st.write("Hello! I am Ananya Aggarwal, a highschooler in Fremont, CA. I started this project to raise awareness about obstructive sleep apnea, an extrmemly widespread sleep disorder around the world. I was shocked by the number of my own family members and friends who were affected by the disorder and realized the problem is much bigger than expected. After doing research about OSA and its treatments, I realized that a big contributing factor to the lack of patient diagnosis for OSA is the expense and inavailblity of its diagnosis options. The most common diagnosis option for OSA, sleep tests, are expensive and not always easy to access, making it hard for possible OSA pateints to seek early diagnosis and therefore more effective treatment. My intelligent OSA screenoing quiz briges this gap between suspecting patients and professional diagnosis. The quiz is free to all and available on all web browsers. It currently predicts whether a user has healthy sleep or is at risk for either OSA or insomnia. I plan to enhance the quiz to also provide users with a prediction of how at-risk/likely they are to have obstructive sleep apnea, informing them of whether they are should get checked for it soon. My goals with this project are to raise the awareness for OSA in general and to gain popularity for my quiz to provide a free first step to OSA patients' diagnosis and treatment journey!")
+		with col4[1]:
+			st.subheader("Contact Us")
+			st.write("Contact us here!")
+			st.write("Email: apneaassist@gmail.com")
+			st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
+			st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
+			
+	if sel_lang=="Spanish":
+		with col4[0]:
+			st.subheader("Acerca de Mí")
+			st.write("¡Hola! Soy Ananya Aggarwal, estudiante de secundaria en Fremont, CA. Comencé este proyecto para crear conciencia sobre la apnea obstructiva del sueño, un trastorno del sueño extremadamente extendido en todo el mundo. Me sorprendió la cantidad de familiares y amigos afectados por el trastorno y me di cuenta de que el problema es mucho mayor de lo esperado. Después de investigar sobre la AOS y sus tratamientos, me di cuenta de que un factor que contribuye en gran medida a la falta de diagnóstico de AOS en los pacientes es el costo y la indisponibilidad de sus opciones de diagnóstico. La opción de diagnóstico más común para la AOS, las pruebas del sueño, son costosas y no siempre de fácil acceso, lo que dificulta que los posibles pacientes con AOS busquen un diagnóstico temprano y, por lo tanto, un tratamiento más eficaz. Mi cuestionario inteligente de detección de AOS cierra esta brecha entre los pacientes sospechosos y el diagnóstico profesional. El cuestionario es gratuito para todos y está disponible en todos los navegadores web. Actualmente predice si un usuario tiene un sueño saludable o si tiene riesgo de sufrir AOS o insomnio. Planeo mejorar el cuestionario para brindarles a los usuarios una predicción sobre el riesgo o la probabilidad de que tengan apnea obstructiva del sueño, informándoles si deben hacerse un examen pronto. Mis objetivos con este proyecto son crear conciencia sobre la AOS en general y ganar popularidad para mi cuestionario para proporcionar un primer paso gratuito en el diagnóstico y tratamiento de los pacientes con AOS.")
+		with col4[1]:
+			st.subheader("Contacta con Nosotras")
+			st.write("Contacta con nosotras aquí!")
+			st.write("Email: apneaassist@gmail.com")
+			st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
+			st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
+	if sel_lang=="Hindi":
+		with col4[0]:
+			st.subheader("About Me")
+			st.write("नमस्ते! मैं अनन्या अग्रवाल हूं, फ़्रेमोंट, सीए में हाई स्कूल की छात्रा। मैंने यह परियोजना ऑब्सट्रक्टिव स्लीप एपनिया, एक नींद विकार जो दुनिया भर में बेहद व्यापक है, के बारे में जागरूकता बढ़ाने के लिए शुरू की है। मैं इस विकार से प्रभावित परिवार और दोस्तों की संख्या से आश्चर्यचकित था और मुझे एहसास हुआ कि समस्या अपेक्षा से कहीं अधिक बड़ी है। ओएसए और इसके उपचारों पर शोध करने के बाद, मुझे एहसास हुआ कि रोगियों में ओएसए का निदान न हो पाने का एक बड़ा कारण उनके निदान विकल्पों की लागत और अनुपलब्धता है। ओएसए के लिए सबसे आम निदान विकल्प, नींद परीक्षण, महंगा है और हमेशा आसानी से उपलब्ध नहीं होता है, जिससे संभावित ओएसए रोगियों के लिए शीघ्र निदान और इसलिए अधिक प्रभावी उपचार प्राप्त करना मुश्किल हो जाता है। मेरी स्मार्ट ओएसए स्क्रीनिंग प्रश्नावली संदिग्ध रोगियों और पेशेवर निदान के बीच इस अंतर को बंद कर देती है। क्विज़ सभी के लिए मुफ़्त है और सभी वेब ब्राउज़र पर उपलब्ध है। यह वर्तमान में भविष्यवाणी करता है कि क्या उपयोगकर्ता को स्वस्थ नींद आती है या उसे ओएसए या अनिद्रा का खतरा है। मैं उपयोगकर्ताओं को उनके जोखिम या ऑब्सट्रक्टिव स्लीप एपनिया होने की संभावना के बारे में पूर्वानुमान देने के लिए प्रश्नावली में सुधार करने की योजना बना रहा हूं, जिससे उन्हें पता चल सके कि क्या उन्हें जल्द ही परीक्षण करवाना चाहिए। इस परियोजना के साथ मेरा लक्ष्य सामान्य रूप से ओएसए के बारे में जागरूकता बढ़ाना और ओएसए रोगियों के निदान और उपचार में मुफ्त पहला कदम प्रदान करने के लिए मेरी प्रश्नावली के लिए लोकप्रियता हासिल करना है।")
+		with col4[1]:
+			st.subheader("संपर्क करें")
+			st.write("हमसे यहां संपर्क करें!")
+			st.write("ईमेल: apneaassist@gmail.com")
+			st.link_button("यूट्यूब", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
+			st.link_button("फेसबुक", "https://www.facebook.com/profile.php?id=61560444242747")
 	
+		
 
     
 
