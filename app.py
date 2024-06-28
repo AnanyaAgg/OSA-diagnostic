@@ -164,12 +164,9 @@ with tab3:
 		]
 		
 		def embed_facebook_post(post_url):
-		    embed_code = f'<iframe src="{post_url}" width="500" height="500" style="border:none;overflow:hidden;" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+		    embed_code = post_url
 		    st.markdown(embed_code, unsafe_allow_html=True)
-		
-		# Embed each Facebook post
-		for url in post_urls:
-		    embed_facebook_post(url)
+		embed_facebook_post('<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid065hjmMpZJZqgmd2xsMe4VxPgGbUVD5WAzasrZ6VWWoz7349VByDM4uVUTQbx6qz9l%26id%3D61560444242747&show_text=true&width=500" width="500" height="661" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>')
 with tab4:
 	col4 = st.columns(2)
 	with col4[0]:
