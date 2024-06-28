@@ -157,16 +157,19 @@ with tab3:
 		st.video('https://youtu.be/KGEKz4r5n8Q?si=thuPAv_9QfiZTaEP')
 	with col3[1]:
 		post_urls = [
-			"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid065hjmMpZJZqgmd2xsMe4VxPgGbUVD5WAzasrZ6VWWoz7349VByDM4uVUTQbx6qz9l%26id%3D61560444242747&show_text=true&width=500"
-			"https://l.facebook.com/l.php?u=https%3A%2F%2Fhealth.ucsd.edu%2Fnews%2Fpress-releases%2F2024-06-21-study-identifies-first-drug-therapy-for-sleep-apnea%2F&h=AT2gM3rNg-Kpbb3vhV5xDmGEuoxdqVnI8XdfdrWWH0dp_V1FvhOjeqD6Mlz0fsKMvy4g0nlsmYldnTEmfWjwK0gFJ41vHpDxBupbRKistOHW8FhlAbZrJEI0aL4KhkjVxbWuMd0LLQ&s=1",
-			"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tipranks.com%2Fnews%2Fpress-releases%2Fpap-therapy-reduces-hospitalizations-by-31-and-er-visits-by-23-for-people-with-obstructive-sleep-apnea-and-comorbid-insomnia&h=AT34rj48qhzbtsEIMSdvwM30QgLPI_AGxMnVR7UPZCszSzyKZtvpefrKSQlMv6bS952yzJ8aTsvhP3M9FWUPn1syLwyU3qNKIH3ug7MhXfNufiI80WWt_4-P5E-cqhBghzi3tXyOTA&s=1"
-		    # Add more URLs as needed
+			'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid065hjmMpZJZqgmd2xsMe4VxPgGbUVD5WAzasrZ6VWWoz7349VByDM4uVUTQbx6qz9l%26id%3D61560444242747&show_text=true&width=500" width="500" height="661" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+			'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0AYK4p3PmqkLpUTaEcgVGL3iDWNgGrSb6FbPVLqZkokWfcZqEG2kTjdypgw9zeqL9l%26id%3D61560444242747&show_text=true&width=500" width="500" height="661" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+			'<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0V9JrMdpByR4bmZYR9aCD42gToQjaVgbD5zM8CaGbhgZWcouNFzGZN48FwrpAhdPdl%26id%3D61560444242747&show_text=true&width=500" width="500" height="622" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>'
+			# Add more URLs as needed
 		]
 		
 		def embed_facebook_post(post_url):
 		    embed_code = post_url
 		    st.markdown(embed_code, unsafe_allow_html=True)
-		embed_facebook_post('<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid065hjmMpZJZqgmd2xsMe4VxPgGbUVD5WAzasrZ6VWWoz7349VByDM4uVUTQbx6qz9l%26id%3D61560444242747&show_text=true&width=500" width="500" height="661" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>')
+
+		for url in post_urls:
+    			embed_facebook_post(url)
+
 with tab4:
 	col4 = st.columns(2)
 	with col4[0]:
