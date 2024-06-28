@@ -92,11 +92,11 @@ with tab2:
 	with st.form("my_form"):
 		with st.expander("What is your gender by birth?"):
 			genre = st.radio("", ["male", "female"])
-		age = st.slider('What is your age?', 1, 100)
+		age = st.slider('What is your age?', 18, 100)
 		oc = st.text_input("What is your occupation?")
 		sle = st.slider("On average, what is your daily sleep duration in hours?", 1, 24)
-		weight = st.slider("How much do you weigh? in lbs", 1, 300)
-		height = st.slider("How tall are you? in inches", 1, 84)
+		weight = st.slider("How much do you weigh? in lbs", 80, 300)
+		height = st.slider("How tall are you? in inches", 48, 84)
 		sbp = st.number_input("What is your Systolic blood pressure?", step=1)
 		dbp = st.number_input("What is your Diastolic blood pressure?", step=1)
 		hr = st.number_input("What is your heart rate?", step=1)
@@ -185,7 +185,7 @@ with tab4:
 	def set_language() -> None:
 	    if "selected_language" in st.session_state:
 	        st.experimental_set_query_params(
-   	         lang4=languages.get(st.session_state["selected_language"])
+   	         lang4=languages4.get(st.session_state["selected_language"])
    	     )
 
 
@@ -197,7 +197,7 @@ with tab4:
 	    key="selected_language",
 	)
 
-	st.markdown(f"Selected Language: {sel_lang}")
+	st.markdown(f"Selected Language: {sel_lang4}")
 	col4 = st.columns(2)
 	if sel_lang4=="English":
 		with col4[0]:
