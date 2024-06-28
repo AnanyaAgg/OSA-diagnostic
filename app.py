@@ -171,13 +171,13 @@ with tab3:
     			embed_facebook_post(url)
 
 with tab4:	
-	engInfo = ""
-	spanInfo = ""
-	hindiInfo = ""
-	languages = {"English": engInfo, "Spanish": spanInfo, "Hindi": hindiInfo}
+	engInfo4 = ""
+	spanInfo4 = ""
+	hindiInfo4 = ""
+	languages4 = {"English": engInfo4, "Spanish": spanInfo4, "Hindi": hindiInfo4}
 
-	query_parameters = st.experimental_get_query_params()
-	if "lang" not in query_parameters:
+	query_parameters4 = st.experimental_get_query_params()
+	if "lang" not in query_parameters4:
   	  st.experimental_set_query_params(lang="en")
   	  st.experimental_rerun()
 
@@ -185,13 +185,13 @@ with tab4:
 	def set_language() -> None:
 	    if "selected_language" in st.session_state:
 	        st.experimental_set_query_params(
-   	         lang=languages.get(st.session_state["selected_language"])
+   	         lang4=languages.get(st.session_state["selected_language"])
    	     )
 
 
-	sel_lang = st.radio(
+	sel_lang4 = st.radio(
 	    "Language",
- 	   options=languages,
+ 	   options=languages4,
 	    horizontal=True,
 	    on_change=set_language,
 	    key="selected_language",
@@ -199,7 +199,7 @@ with tab4:
 
 	st.markdown(f"Selected Language: {sel_lang}")
 	col4 = st.columns(2)
-	if sel_lang=="English":
+	if sel_lang4=="English":
 		with col4[0]:
 			st.subheader("About Me")
 			st.write("Hello! I am Ananya Aggarwal, a highschooler in Fremont, CA. I started this project to raise awareness about obstructive sleep apnea, an extrmemly widespread sleep disorder around the world. I was shocked by the number of my own family members and friends who were affected by the disorder and realized the problem is much bigger than expected. After doing research about OSA and its treatments, I realized that a big contributing factor to the lack of patient diagnosis for OSA is the expense and inavailblity of its diagnosis options. The most common diagnosis option for OSA, sleep tests, are expensive and not always easy to access, making it hard for possible OSA pateints to seek early diagnosis and therefore more effective treatment. My intelligent OSA screenoing quiz briges this gap between suspecting patients and professional diagnosis. The quiz is free to all and available on all web browsers. It currently predicts whether a user has healthy sleep or is at risk for either OSA or insomnia. I plan to enhance the quiz to also provide users with a prediction of how at-risk/likely they are to have obstructive sleep apnea, informing them of whether they are should get checked for it soon. My goals with this project are to raise the awareness for OSA in general and to gain popularity for my quiz to provide a free first step to OSA patients' diagnosis and treatment journey!")
@@ -210,7 +210,7 @@ with tab4:
 			st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
 			st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
 			
-	if sel_lang=="Spanish":
+	if sel_lang4=="Spanish":
 		with col4[0]:
 			st.subheader("Acerca de Mí")
 			st.write("¡Hola! Soy Ananya Aggarwal, estudiante de secundaria en Fremont, CA. Comencé este proyecto para crear conciencia sobre la apnea obstructiva del sueño, un trastorno del sueño extremadamente extendido en todo el mundo. Me sorprendió la cantidad de familiares y amigos afectados por el trastorno y me di cuenta de que el problema es mucho mayor de lo esperado. Después de investigar sobre la AOS y sus tratamientos, me di cuenta de que un factor que contribuye en gran medida a la falta de diagnóstico de AOS en los pacientes es el costo y la indisponibilidad de sus opciones de diagnóstico. La opción de diagnóstico más común para la AOS, las pruebas del sueño, son costosas y no siempre de fácil acceso, lo que dificulta que los posibles pacientes con AOS busquen un diagnóstico temprano y, por lo tanto, un tratamiento más eficaz. Mi cuestionario inteligente de detección de AOS cierra esta brecha entre los pacientes sospechosos y el diagnóstico profesional. El cuestionario es gratuito para todos y está disponible en todos los navegadores web. Actualmente predice si un usuario tiene un sueño saludable o si tiene riesgo de sufrir AOS o insomnio. Planeo mejorar el cuestionario para brindarles a los usuarios una predicción sobre el riesgo o la probabilidad de que tengan apnea obstructiva del sueño, informándoles si deben hacerse un examen pronto. Mis objetivos con este proyecto son crear conciencia sobre la AOS en general y ganar popularidad para mi cuestionario para proporcionar un primer paso gratuito en el diagnóstico y tratamiento de los pacientes con AOS.")
@@ -220,7 +220,7 @@ with tab4:
 			st.write("Email: apneaassist@gmail.com")
 			st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
 			st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
-	if sel_lang=="Hindi":
+	if sel_lang4=="Hindi":
 		with col4[0]:
 			st.subheader("About Me")
 			st.write("नमस्ते! मैं अनन्या अग्रवाल हूं, फ़्रेमोंट, सीए में हाई स्कूल की छात्रा। मैंने यह परियोजना ऑब्सट्रक्टिव स्लीप एपनिया, एक नींद विकार जो दुनिया भर में बेहद व्यापक है, के बारे में जागरूकता बढ़ाने के लिए शुरू की है। मैं इस विकार से प्रभावित परिवार और दोस्तों की संख्या से आश्चर्यचकित था और मुझे एहसास हुआ कि समस्या अपेक्षा से कहीं अधिक बड़ी है। ओएसए और इसके उपचारों पर शोध करने के बाद, मुझे एहसास हुआ कि रोगियों में ओएसए का निदान न हो पाने का एक बड़ा कारण उनके निदान विकल्पों की लागत और अनुपलब्धता है। ओएसए के लिए सबसे आम निदान विकल्प, नींद परीक्षण, महंगा है और हमेशा आसानी से उपलब्ध नहीं होता है, जिससे संभावित ओएसए रोगियों के लिए शीघ्र निदान और इसलिए अधिक प्रभावी उपचार प्राप्त करना मुश्किल हो जाता है। मेरी स्मार्ट ओएसए स्क्रीनिंग प्रश्नावली संदिग्ध रोगियों और पेशेवर निदान के बीच इस अंतर को बंद कर देती है। क्विज़ सभी के लिए मुफ़्त है और सभी वेब ब्राउज़र पर उपलब्ध है। यह वर्तमान में भविष्यवाणी करता है कि क्या उपयोगकर्ता को स्वस्थ नींद आती है या उसे ओएसए या अनिद्रा का खतरा है। मैं उपयोगकर्ताओं को उनके जोखिम या ऑब्सट्रक्टिव स्लीप एपनिया होने की संभावना के बारे में पूर्वानुमान देने के लिए प्रश्नावली में सुधार करने की योजना बना रहा हूं, जिससे उन्हें पता चल सके कि क्या उन्हें जल्द ही परीक्षण करवाना चाहिए। इस परियोजना के साथ मेरा लक्ष्य सामान्य रूप से ओएसए के बारे में जागरूकता बढ़ाना और ओएसए रोगियों के निदान और उपचार में मुफ्त पहला कदम प्रदान करने के लिए मेरी प्रश्नावली के लिए लोकप्रियता हासिल करना है।")
