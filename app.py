@@ -179,7 +179,7 @@ with tab4:
 	query_parameters4 = st.experimental_get_query_params()
 	if "lang" not in query_parameters4:
 		st.experimental_set_query_params(lang="en")
-	        st.experimental_rerun()
+		st.experimental_rerun()
 	
 	def set_language4() -> None:
 		if "selected_language4" in st.session_state:
