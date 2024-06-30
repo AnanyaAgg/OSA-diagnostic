@@ -37,8 +37,8 @@ with tab1:
         	key="selected_language1",
     	)
 	selected_language1 = set_language(1, languages)
-
-    	st.markdown(f"Selected Language: {selected_language1}")
+	
+	st.markdown(f"Selected Language: {selected_language1}")
     	if selected_language1 == "English":
 		st.subheader("What is Obstructive Sleep Apnea?")
 		st.write("")
