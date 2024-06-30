@@ -16,36 +16,30 @@ data = np.random.randn(10, 1)
 def load_model():
 	mod = joblib.load('best_random_forest_model.joblib')
 	return mod
-
+	
+def set_language(tab_number, languages_key):
+    if f"selected_language{tab_number}" in st.session_state:
+        lang = st.session_state[f"selected_language{tab_number}"]
+        st.experimental_set_query_params(**{f"lang{tab_number}": languages_key[lang]})
+        return lang
+    return "English"
+	
 with tab1:
-	engInfo = ""
-	spanInfo = ""
-	hindiInfo = ""
+	engInfo = "English"
+	spanInfo = "Spanish"
+	hindiInfo = "Hindi"
 	languages = {"English": engInfo, "Spanish": spanInfo, "Hindi": hindiInfo}
 
-	query_parameters = st.experimental_get_query_params()
-	if "lang" not in query_parameters:
-  	  st.experimental_set_query_params(lang="en")
-  	  st.experimental_rerun()
+	sel_lang1 = st.radio(
+        	"Language",
+        	options=languages.keys(),
+        	horizontal=True,
+        	key="selected_language1",
+    	)
+    	selected_language1 = set_language(1, languages)
 
-
-	def set_language() -> None:
-	    if "selected_language" in st.session_state:
-	        st.experimental_set_query_params(
-   	         lang=languages.get(st.session_state["selected_language"])
-   	     )
-
-
-	sel_lang = st.radio(
-	    "Language",
- 	   options=languages,
-	    horizontal=True,
-	    on_change=set_language,
-	    key="selected_language",
-	)
-
-	st.markdown(f"Selected Language: {sel_lang}")
-	if sel_lang=="English":
+    	st.markdown(f"Selected Language: {selected_language1}")
+    	if selected_language1 == "English":
 		st.subheader("What is Obstructive Sleep Apnea?")
 		st.write("")
 		col = st.columns(2)
@@ -58,8 +52,8 @@ with tab1:
 			st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
 			st.write("Untreated, obstructive sleep apnea can have serious health consequences. The repeated interruptions in breathing lead to oxygen desaturation, putting strain on the cardiovascular system and increasing the risk of hypertension, heart disease, and stroke. OSA is also associated with metabolic disorders such as insulin resistance and type 2 diabetes. Additionally, untreated OSA can contribute to daytime fatigue, impairing cognitive function and increasing the risk of accidents while driving or operating machinery. Moreover, the chronic sleep disruption associated with OSA can negatively impact mood, leading to depression and anxiety in some individuals.")
 		st.write("---")
-	if sel_lang=="Spanish":
-		st.subheader("¿Qué es la apnea obstructiva del sueño?")
+    	elif selected_language1 == "Spanish":
+        	st.subheader("¿Qué es la apnea obstructiva del sueño?")
 		st.write("")
 		col = st.columns(2)
 		with col[0]:
@@ -71,8 +65,8 @@ with tab1:
 			st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
 			st.write("La apnea obstructiva del sueño no tratada puede tener graves consecuencias para la salud. Las repetidas interrupciones de la respiración provocan una desaturación de oxígeno, lo que ejerce presión sobre el sistema cardiovascular y aumenta el riesgo de hipertensión, enfermedades cardíacas y accidentes cerebrovasculares. La AOS también se asocia con trastornos metabólicos como la resistencia a la insulina y la diabetes tipo 2. Además, la AOS no tratada puede contribuir a la fatiga diurna, perjudicando la función cognitiva y aumentando el riesgo de accidentes al conducir o utilizar maquinaria. Además, la interrupción crónica del sueño asociada con la AOS puede afectar negativamente el estado de ánimo y provocar depresión y ansiedad en algunas personas.")
 		st.write("---")
-	if sel_lang=="Hindi":
-		st.subheader("ऑब्सट्रक्टिव स्लीप एपनिया क्या है?")
+    	elif selected_language1 == "Hindi":
+        	st.subheader("ऑब्सट्रक्टिव स्लीप एपनिया क्या है?")
 		st.write("")
 		col = st.columns(2)
 		with col[0]:
@@ -84,8 +78,6 @@ with tab1:
 			st.image('https://sleepapneatreatment.com/wp-content/uploads/2022/10/Obstructive-Sleep-Apnea.gif')
 			st.write("अनुपचारित, ऑब्सट्रक्टिव स्लीप एपनिया के गंभीर स्वास्थ्य परिणाम हो सकते हैं। सांस लेने में बार-बार रुकावट से ऑक्सीजन की कमी हो जाती है, जिससे हृदय प्रणाली पर दबाव पड़ता है और उच्च रक्तचाप, हृदय रोग और स्ट्रोक का खतरा बढ़ जाता है। ओएसए इंसुलिन प्रतिरोध और टाइप 2 मधुमेह जैसे चयापचय संबंधी विकारों से भी जुड़ा है। इसके अतिरिक्त, अनुपचारित ओएसए दिन के समय थकान, संज्ञानात्मक कार्य को ख़राब कर सकता है और ड्राइविंग या मशीनरी चलाते समय दुर्घटनाओं के जोखिम को बढ़ा सकता है। इसके अलावा, ओएसए से जुड़ी पुरानी नींद की गड़बड़ी मूड पर नकारात्मक प्रभाव डाल सकती है, जिससे कुछ व्यक्तियों में अवसाद और चिंता हो सकती है।")
 		st.write("---")
-
-
 	
 with tab2:
 	st.header("Get your AI-backed diagnosis today!")
@@ -171,34 +163,23 @@ with tab3:
     			embed_facebook_post(url)
 
 with tab4:	
-	engInfo4 = ""
-	spanInfo4 = ""
-	hindiInfo4 = ""
+	engInfo4 = "English"
+	spanInfo4 = "Spanish"
+	hindiInfo4 = "Hindi"
 	languages4 = {"English": engInfo4, "Spanish": spanInfo4, "Hindi": hindiInfo4}
-	
-	query_parameters4 = st.experimental_get_query_params()
-	if "lang" not in query_parameters4:
-		st.experimental_set_query_params(lang="en")
-		st.experimental_rerun()
-	
-	def set_language4() -> None:
-		if "selected_language4" in st.session_state:
-	            st.experimental_set_query_params(
-	                lang4=languages4.get(st.session_state["selected_language4"])
-	            )
-	
+
 	sel_lang4 = st.radio(
 		"Language",
-	        options=languages4,
+	        options=languages4.keys(),
 	        horizontal=True,
-	        on_change=set_language4,
 	        key="selected_language4",
-	    )
+	)
+	selected_language4 = set_language(4, languages4)
 	
-	st.markdown(f"Selected Language: {sel_lang4}")
+	st.markdown(f"Selected Language: {selected_language4}")
 	col4 = st.columns(2)
-	if sel_lang4 == "English":
-		with col4[0]:
+	if selected_language4 == "English":
+        	with col4[0]:
 			st.subheader("About Me")
 			st.write("Hello! I am Ananya Aggarwal, a highschooler in Fremont, CA. I started this project to raise awareness about obstructive sleep apnea, an extrmemly widespread sleep disorder around the world. I was shocked by the number of my own family members and friends who were affected by the disorder and realized the problem is much bigger than expected. After doing research about OSA and its treatments, I realized that a big contributing factor to the lack of patient diagnosis for OSA is the expense and inavailblity of its diagnosis options. The most common diagnosis option for OSA, sleep tests, are expensive and not always easy to access, making it hard for possible OSA pateints to seek early diagnosis and therefore more effective treatment. My intelligent OSA screenoing quiz briges this gap between suspecting patients and professional diagnosis. The quiz is free to all and available on all web browsers. It currently predicts whether a user has healthy sleep or is at risk for either OSA or insomnia. I plan to enhance the quiz to also provide users with a prediction of how at-risk/likely they are to have obstructive sleep apnea, informing them of whether they are should get checked for it soon. My goals with this project are to raise the awareness for OSA in general and to gain popularity for my quiz to provide a free first step to OSA patients' diagnosis and treatment journey!")
 		with col4[1]:
@@ -207,8 +188,7 @@ with tab4:
 			st.write("Email: apneaassist@gmail.com")
 			st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
 			st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
-			
-	if sel_lang4 == "Spanish":
+	elif selected_language4 == "Spanish":
 		with col4[0]:
 			st.subheader("Acerca de Mí")
 			st.write("¡Hola! Soy Ananya Aggarwal, estudiante de secundaria en Fremont, CA. Comencé este proyecto para crear conciencia sobre la apnea obstructiva del sueño, un trastorno del sueño extremadamente extendido en todo el mundo. Me sorprendió la cantidad de familiares y amigos afectados por el trastorno y me di cuenta de que el problema es mucho mayor de lo esperado. Después de investigar sobre la AOS y sus tratamientos, me di cuenta de que un factor que contribuye en gran medida a la falta de diagnóstico de AOS en los pacientes es el costo y la indisponibilidad de sus opciones de diagnóstico. La opción de diagnóstico más común para la AOS, las pruebas del sueño, son costosas y no siempre de fácil acceso, lo que dificulta que los posibles pacientes con AOS busquen un diagnóstico temprano y, por lo tanto, un tratamiento más eficaz. Mi cuestionario inteligente de detección de AOS cierra esta brecha entre los pacientes sospechosos y el diagnóstico profesional. El cuestionario es gratuito para todos y está disponible en todos los navegadores web. Actualmente predice si un usuario tiene un sueño saludable o si tiene riesgo de sufrir AOS o insomnio. Planeo mejorar el cuestionario para brindarles a los usuarios una predicción sobre el riesgo o la probabilidad de que tengan apnea obstructiva del sueño, informándoles si deben hacerse un examen pronto. Mis objetivos con este proyecto son crear conciencia sobre la AOS en general y ganar popularidad para mi cuestionario para proporcionar un primer paso gratuito en el diagnóstico y tratamiento de los pacientes con AOS.")
@@ -218,8 +198,8 @@ with tab4:
 			st.write("Email: apneaassist@gmail.com")
 			st.link_button("YouTube", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
 			st.link_button("FaceBook", "https://www.facebook.com/profile.php?id=61560444242747")
-	if sel_lang4 == "Hindi":
-		with col4[0]:
+	elif selected_language4 == "Hindi":
+        	with col4[0]:
 			st.subheader("About Me")
 			st.write("नमस्ते! मैं अनन्या अग्रवाल हूं, फ़्रेमोंट, सीए में हाई स्कूल की छात्रा। मैंने यह परियोजना ऑब्सट्रक्टिव स्लीप एपनिया, एक नींद विकार जो दुनिया भर में बेहद व्यापक है, के बारे में जागरूकता बढ़ाने के लिए शुरू की है। मैं इस विकार से प्रभावित परिवार और दोस्तों की संख्या से आश्चर्यचकित था और मुझे एहसास हुआ कि समस्या अपेक्षा से कहीं अधिक बड़ी है। ओएसए और इसके उपचारों पर शोध करने के बाद, मुझे एहसास हुआ कि रोगियों में ओएसए का निदान न हो पाने का एक बड़ा कारण उनके निदान विकल्पों की लागत और अनुपलब्धता है। ओएसए के लिए सबसे आम निदान विकल्प, नींद परीक्षण, महंगा है और हमेशा आसानी से उपलब्ध नहीं होता है, जिससे संभावित ओएसए रोगियों के लिए शीघ्र निदान और इसलिए अधिक प्रभावी उपचार प्राप्त करना मुश्किल हो जाता है। मेरी स्मार्ट ओएसए स्क्रीनिंग प्रश्नावली संदिग्ध रोगियों और पेशेवर निदान के बीच इस अंतर को बंद कर देती है। क्विज़ सभी के लिए मुफ़्त है और सभी वेब ब्राउज़र पर उपलब्ध है। यह वर्तमान में भविष्यवाणी करता है कि क्या उपयोगकर्ता को स्वस्थ नींद आती है या उसे ओएसए या अनिद्रा का खतरा है। मैं उपयोगकर्ताओं को उनके जोखिम या ऑब्सट्रक्टिव स्लीप एपनिया होने की संभावना के बारे में पूर्वानुमान देने के लिए प्रश्नावली में सुधार करने की योजना बना रहा हूं, जिससे उन्हें पता चल सके कि क्या उन्हें जल्द ही परीक्षण करवाना चाहिए। इस परियोजना के साथ मेरा लक्ष्य सामान्य रूप से ओएसए के बारे में जागरूकता बढ़ाना और ओएसए रोगियों के निदान और उपचार में मुफ्त पहला कदम प्रदान करने के लिए मेरी प्रश्नावली के लिए लोकप्रियता हासिल करना है।")
 		with col4[1]:
@@ -228,6 +208,7 @@ with tab4:
 			st.write("ईमेल: apneaassist@gmail.com")
 			st.link_button("यूट्यूब", "https://youtube.com/@apneaassist?si=aWi0IgocfLbwCBuZ")
 			st.link_button("फेसबुक", "https://www.facebook.com/profile.php?id=61560444242747")
+		
 	
 		
 
