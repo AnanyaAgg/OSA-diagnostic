@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
 
-tab1, tab2, tab3, tab4 = st.tabs(["Home", "Diagnositc Quiz", "More Information", "About me + Contact Us"])
+tab1, tab2, tab3, tab4 = st.tabs(["Home", "Screening Quiz", "More Information", "About me + Contact Us"])
 data = np.random.randn(10, 1)
 
 @st.cache_resource
@@ -80,7 +80,7 @@ with tab1:
 		st.write("---")
 	
 with tab2:
-	st.header("Get your AI-backed diagnosis today!")
+	st.header("Get your screening results today!")
 	with st.form("my_form"):
 		with st.expander("What is your gender by birth?"):
 			genre = st.radio("", ["male", "female"])
