@@ -66,7 +66,7 @@ with tab1:
 			st.write("La apnea obstructiva del sueño no tratada puede tener graves consecuencias para la salud. Las repetidas interrupciones de la respiración provocan una desaturación de oxígeno, lo que ejerce presión sobre el sistema cardiovascular y aumenta el riesgo de hipertensión, enfermedades cardíacas y accidentes cerebrovasculares. La AOS también se asocia con trastornos metabólicos como la resistencia a la insulina y la diabetes tipo 2. Además, la AOS no tratada puede contribuir a la fatiga diurna, perjudicando la función cognitiva y aumentando el riesgo de accidentes al conducir o utilizar maquinaria. Además, la interrupción crónica del sueño asociada con la AOS puede afectar negativamente el estado de ánimo y provocar depresión y ansiedad en algunas personas.")
 		st.write("---")
 	if selected_language1 == "Hindi":
-        	st.subheader("ऑब्सट्रक्टिव स्लीप एपनिया क्या है?")
+		st.subheader("ऑब्सट्रक्टिव स्लीप एपनिया क्या है?")
 		st.write("")
 		col = st.columns(2)
 		with col[0]:
