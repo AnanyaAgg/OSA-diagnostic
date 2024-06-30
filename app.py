@@ -53,7 +53,7 @@ with tab1:
 			st.write("Untreated, obstructive sleep apnea can have serious health consequences. The repeated interruptions in breathing lead to oxygen desaturation, putting strain on the cardiovascular system and increasing the risk of hypertension, heart disease, and stroke. OSA is also associated with metabolic disorders such as insulin resistance and type 2 diabetes. Additionally, untreated OSA can contribute to daytime fatigue, impairing cognitive function and increasing the risk of accidents while driving or operating machinery. Moreover, the chronic sleep disruption associated with OSA can negatively impact mood, leading to depression and anxiety in some individuals.")
 		st.write("---")
 	if selected_language1 == "Spanish":
-        	st.subheader("¿Qué es la apnea obstructiva del sueño?")
+		st.subheader("¿Qué es la apnea obstructiva del sueño?")
 		st.write("")
 		col = st.columns(2)
 		with col[0]:
