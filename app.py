@@ -144,7 +144,7 @@ with tab3:
 	st.subheader("Find out more about OSA")
 	col3 = st.columns(2)
 	with col3[0]: 	
-		st.write("To find out more about OSA, check out our YouTube channel! We post informative videos about all aspects of OSA and hope to spread awareness about this silent killer. ")
+		st.write("To find out more about OSA, check out our YouTube channel and our FaceBook blog! We post informative videos about all aspects of OSA and hope to spread awareness about this silent killer. ")
 		st.video('https://youtu.be/IIKlqbLwS7M')
 		st.video('https://youtu.be/KGEKz4r5n8Q?si=thuPAv_9QfiZTaEP')
 	with col3[1]:
